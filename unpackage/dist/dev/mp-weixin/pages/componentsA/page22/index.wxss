@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.page22-wrap {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: beige;
+}
+.addFood, .receFood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  /* 根据需要调整大小 */
+  height: 20px;
+  /* 根据需要调整大小 */
+  background-color: green;
+  border-radius: 50%;
+  /* 圆形边框 */
+  position: relative;
+}
+.addFood::before {
+  content: '+';
+  color: white;
+  font-size: 20px;
+  /* 根据需要调整大小 */
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.receFood::before {
+  content: '-';
+  color: white;
+  font-size: 20px;
+  /* 根据需要调整大小 */
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.gold {
+  height: 40px;
+  width: 110px;
+  border: 2px solid #da9424;
+  background-color: rgba(205, 211, 169, 0.8);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.menu22 {
+  padding: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu22 .item22 {
+  width: 47%;
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menu22 .item22 .name {
+  height: 40px;
+  padding: 0 8px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menu22 .item22 .name-active {
+  background-color: #56eb9b;
+  color: #fff;
+}
+

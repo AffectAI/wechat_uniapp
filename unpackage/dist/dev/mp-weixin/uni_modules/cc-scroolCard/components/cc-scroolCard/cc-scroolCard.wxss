@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.poster_swiper.data-v-6f0067f3 {
+  height: 950rpx;
+  width: 100%;
+}
+.poster_swiper swiper-item.data-v-6f0067f3 {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  overflow: initial;
+}
+.poster_swiper swiper-item .goods_info_box.data-v-6f0067f3 {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0.88);
+          transform: scale(0.88);
+  transition: all 0.4s;
+  position: relative;
+  overflow: initial;
+}
+.poster_swiper swiper-item .goods_info_box .goods_image.data-v-6f0067f3 {
+  width: 100%;
+  height: 100%;
+}
+.poster_swiper swiper-item .goods_info_box .goods_info.data-v-6f0067f3 {
+  padding: 24rpx;
+}
+.poster_swiper swiper-item .goods_info_box .goods_info .goods_name.data-v-6f0067f3 {
+  color: #333;
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.poster_swiper swiper-item .goods_info_box .goods_info .price_box.data-v-6f0067f3 {
+  margin-top: 24rpx;
+  display: flex;
+  align-items: center;
+}
+.poster_swiper swiper-item .goods_info_box .goods_info .price_box .price.data-v-6f0067f3 {
+  font-size: 38rpx;
+  color: red;
+}
+.poster_swiper swiper-item .goods_info_box .goods_info .price_box .store_price.data-v-6f0067f3 {
+  margin-left: 30rpx;
+  font-size: 26rpx;
+  color: #999;
+  text-decoration: line-through;
+}
+.poster_swiper swiper-item .goods_info_box .goods_info .poster_info.data-v-6f0067f3 {
+  border-top: 2rpx solid #f1f1f1;
+  padding-top: 24rpx;
+  margin-top: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.poster_swiper swiper-item .goods_info_box .goods_info .poster_info .info.data-v-6f0067f3 {
+  display: flex;
+  flex-direction: column;
+}
+.poster_swiper swiper-item .goods_info_box .goods_info .poster_info .info view.data-v-6f0067f3 {
+  color: #333;
+  font-size: 28rpx;
+}
+.poster_swiper swiper-item .goods_info_box .goods_info .poster_info .info text.data-v-6f0067f3 {
+  color: #999;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+.poster_swiper swiper-item .goods_info_box .goods_info .poster_info .poster_code_image.data-v-6f0067f3 {
+  width: 170rpx;
+  height: 170rpx;
+  flex-shrink: 0;
+}
+.share_save_box.data-v-6f0067f3 {
+  position: fixed;
+  bottom: calc((100vh - 950rpx - 240rpx) / 4);
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.share_save_box button.data-v-6f0067f3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+.share_save_box button image.data-v-6f0067f3 {
+  width: 60rpx;
+  height: 60rpx;
+}
+.share_save_box button text.data-v-6f0067f3 {
+  font-size: 24rpx;
+  color: #333333;
+}
+.h5_press_save.data-v-6f0067f3 {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+.h5_press_save image.data-v-6f0067f3 {
+  width: 100%;
+}
+.h5_press_save .download.data-v-6f0067f3 {
+  font-size: 24rpx;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  padding: 5rpx 30rpx;
+  border-radius: 40rpx;
+  bottom: 30rpx;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.triangle.data-v-6f0067f3 {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  /* 左边框透明 */
+  border-right: 10px solid transparent;
+  /* 右边框透明 */
+  border-top: 40px solid #fff;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+}
+

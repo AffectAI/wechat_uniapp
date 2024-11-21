@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.page35-wrap {
+  min-height: 100vh;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/results/img4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.page35-wrap .charts-box {
+  width: 100%;
+  min-height: 370px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/results/img18.png);
+  background-position: center;
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.page35-wrap .charts-box2 {
+  width: 100%;
+  min-height: 130px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/results/img19.png);
+  background-position: center;
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.page35-wrap .charts-box3 {
+  width: 100%;
+  min-height: 210px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/results/img19.png);
+  background-position: center;
+  background-size: 95% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.page35-wrap .phq {
+  width: 100%;
+  height: 40px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/results/img12.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.page35-wrap .phq .score_bg {
+  width: 80px;
+  height: 40px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/results/img9.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: -35px;
+  font-size: 12px;
+  color: #fff;
+  padding-top: 5px;
+  text-align: center;
+}
+.page35-wrap .phq2 {
+  width: 100%;
+  height: 40px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/results/img24.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.page35-wrap .phq2 .score_bg2 {
+  width: 80px;
+  height: 40px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/results/img9.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: -35px;
+  font-size: 12px;
+  color: #fff;
+  padding-top: 5px;
+  text-align: center;
+}
+.page35-wrap .phq3 {
+  width: 100%;
+  height: 40px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/results/img25.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.page35-wrap .phq4 {
+  width: 100%;
+  height: 105px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/results/img25.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.page35-wrap .tit35 {
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/results/img15.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 80%;
+  padding-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page35-wrap .imgs {
+  background-position: initial;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.page35-wrap .img1 {
+  width: 180px;
+  height: 85px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page25/img1.png);
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.page35-wrap .img2 {
+  width: 180px;
+  height: 85px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page25/img2.png);
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.page35-wrap .img3 {
+  width: 180px;
+  height: 85px;
+  top: 250px;
+  left: 10px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page25/img3.png);
+}
+.page35-wrap .img4 {
+  width: 180px;
+  height: 125px;
+  margin: 0 10px;
+  top: 227px;
+  right: 0;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page25/img4.png);
+}
+.page35-wrap .img5 {
+  width: 180px;
+  height: 85px;
+  top: 133px;
+  left: 83px;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page25/img5.png);
+}
+.page35-wrap .dialogue {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  width: 96%;
+  margin: auto;
+}
+.page35-wrap .dialogue .top {
+  width: 110px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #C8F0FA;
+  color: #434343;
+  font-size: 18px;
+  text-align: center;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.page35-wrap .dialogue .center {
+  display: flex;
+  background-color: #f1f1f4;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 202px;
+  box-sizing: border-box;
+  padding: 11px 21px;
+}
+

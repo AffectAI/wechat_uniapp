@@ -1,0 +1,1 @@
+<view class="page51-wrap"><face-bio-assay class="vue-ref" vue-id="4c62ec8a-1" isDev="{{false}}" data-ref="faceDetect" data-event-opts="{{[['^pageEvent',[['pageEvent']]],['^detectFailed',[['detectFailed']]],['^photoChange',[['photoChange']]]]}}" bind:pageEvent="__e" bind:detectFailed="__e" bind:photoChange="__e" bind:__l="__l"></face-bio-assay></view>

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.scroll-view_H {
+  width: 500px;
+  height: 492px;
+  overflow-x: scroll;
+  display: flex;
+}
+.page18-wrap {
+  min-height: 100vh;
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img5.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: beige;
+}
+.gold {
+  height: 40px;
+  width: 110px;
+  border: 2px solid #da9424;
+  background-color: rgba(205, 211, 169, 0.8);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.item1 {
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img6.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: beige;
+}
+.item2 {
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img7.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: beige;
+}
+.item3 {
+  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img8.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: beige;
+}
+.item {
+  position: relative;
+  margin: 0 auto;
+  width: 211px;
+  height: 410px;
+  background-color: #fff;
+  border-radius: 20px;
+  float: left;
+}
+.item .text {
+  line-height: 1.5;
+  padding: 8px;
+}
+.item .text .title {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.item .text .des {
+  font-size: 12px;
+}
+.item .triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  /* 左边框透明 */
+  border-right: 10px solid transparent;
+  /* 右边框透明 */
+  border-top: 40px solid #fff;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+}
+

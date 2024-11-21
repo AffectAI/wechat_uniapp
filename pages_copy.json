@@ -1,0 +1,299 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	// "condition": { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式(list 的索引项)
+	// 	"list": [{
+	// 		"name": "test", //模式名称
+	// 		"path": "pages/componentsC/test/index", //启动页面，必选
+	// 		"query": "uuid=c4bba940-f69e-11ea-a419-6bafda9d095e&__id__=1" //启动参数，在页面的onLoad函数里面得到
+	// 	}]
+	// },
+	"lazyCodeLoading":"requiredComponents",
+	"pages": [
+		{
+			"path": "pages/template/index/index",
+			"style": {
+				"navigationBarTitleText": "AI心灵之镜"
+			},
+			"componentPlaceholder": {
+				"page1": "view"
+			},
+			"usingComponents" : {
+				"page1": "/pages/componentsA/page1/index"
+			}
+		},
+		{
+			"path": "pages/template/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的信息"
+			}
+		},
+		{
+			"path": "pages/template/task/index",
+			"style": {
+				"navigationBarTitleText": "任务列表"
+			}
+		}
+		// 分包
+		
+	],
+	"subPackages": [
+		{
+			"root": "pages/componentsA",
+			"pages": [
+				// 隐私
+				{
+					"path": "pages/componentsA/page1/index",
+					"style": {
+					}
+				},
+				// 传闻
+				{
+					"path": "pages/componentsA/page2/index",
+					"style": {
+					}
+				},
+				// 步骤图
+				{
+					"path": "pages/componentsA/page3/index",
+					"style": {
+					}
+				},
+				// 步骤图后 对话
+				{
+					"path": "pages/componentsA/page4/index",
+					"style": {
+					}
+				},
+				// 拍摄
+				{
+					"path": "pages/componentsA/page5/index",
+					"style": {
+					}
+				},
+				// 心湖倒影后的旅行伙伴
+				{
+					"path": "pages/componentsA/page6/index",
+					"style": {
+					}
+				},
+				// 心境内观自我，选择题
+				{
+					"path": "pages/componentsA/page7/index",
+					"style": {
+					}
+				},
+				// 选择题-结束
+				{
+					"path": "pages/componentsA/page8/index",
+					"style": {
+					}
+				},
+				// 答题后的 旅游伙伴
+				{
+					"path": "pages/componentsA/page9/index",
+					"style": {
+					}
+				},
+				// 步骤图 2
+				{
+					"path": "pages/componentsA/page10/index",
+					"style": {
+					}
+				},
+				// 猎人
+				{
+					"path": "pages/componentsA/page11/index",
+					"style": {
+					}
+				},
+				// 捕鸟大作战-封面
+				{
+					"path": "pages/componentsA/page12/index",
+					"style": {
+					}
+				},
+				// 捕鸟封面后第一个页面
+				{
+					"path": "pages/componentsA/page13/index",
+					"style": {
+					}
+				},
+				// 入门后对话
+				{
+					"path": "pages/componentsA/page13_next_desc/index",
+					"style": {
+					}
+				},
+				// 升级的加载loading页面
+				{
+					"path": "pages/componentsA/page13_next_loading/index",
+					"style": {
+					}
+				},
+				// 升级后的捕鸟动画
+				{
+					"path": "pages/componentsA/page13_upgrade/index",
+					"style": {
+					}
+				},
+				// 捕鸟封面后第2个页面
+				// {
+				// 	"path": "pages/componentsA/page14/index",
+				// 	"style": {
+				// 	}
+				// },
+				
+				// 旅行伙伴 -- 猎人
+				{
+					"path": "pages/componentsA/page15/index",
+					"style": {
+					}
+				},
+				// 步骤图3
+				{
+					"path": "pages/componentsA/page16/index",
+					"style": {
+					}
+				},
+				// 步骤图3后 对话
+				{
+					"path": "pages/componentsA/page17/index",
+					"style": {
+					}
+				},
+				// 山间清泉
+				{
+					"path": "pages/componentsA/page18/index",
+					"style": {
+					}
+				},
+				// 旅行伙伴 
+				{
+					"path": "pages/componentsA/page19/index",
+					"style": {
+					}
+				},
+				// 林间石舍
+				{
+					"path": "pages/componentsA/page20/index",
+					"style": {
+					}
+				},
+				// 旅行伙伴
+				{
+					"path": "pages/componentsA/page21/index",
+					"style": {
+					}
+				},
+				// 菜单
+				{
+					"path": "pages/componentsA/page22/index",
+					"style": {
+					} 
+				},
+				// 菜单后的封面
+				{
+					"path": "pages/componentsA/page23/index",
+					"style": {
+					} 
+				},
+				// 解忧日记第一卷
+				{
+					"path": "pages/componentsA/page24/index",
+					"style": {
+					} 
+				},
+				// 解忧日记第2卷
+				{
+					"path": "pages/componentsA/page24_1/index",
+					"style": {
+					} 
+				},
+				// 第三卷
+				{
+					"path": "pages/componentsA/page24_2/index",
+					"style": {
+					} 
+				},
+				{
+					"path": "pages/componentsA/page25/index",
+					"style": {
+					} 
+				},
+				// 描述心情不好
+				{
+					"path": "pages/componentsA/page26/index",
+					"style": {
+					} 
+				},
+				// 留言完成
+				{
+					"path": "pages/componentsA/page27/index",
+					"style": {
+					} 
+				},
+				// 第四步骤
+				{
+					"path": "pages/componentsA/page28/index",
+					"style": {
+					} 
+				},
+				// 日出对话
+				{
+					"path": "pages/componentsA/page29/index",
+					"style": {
+					} 
+				},
+				// 最后动画小鸟飞行
+				{
+					"path": "pages/componentsA/page30/index",
+					"style": {
+					} 
+				},
+				{
+					"path": "pages/componentsA/page31/index",
+					"style": {
+					} 
+				},
+				{
+					"path": "pages/componentsA/page32/index",
+					"style": {
+					} 
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "AI心灵之镜",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	}
+	// "tabBar": {
+	// 	"color": "#909399",
+	// 	"selectedColor": "#303133",
+	// 	"backgroundColor": "#FFFFFF",
+	// 	"borderStyle": "black",
+	// 	"list": [{
+	// 			"pagePath": "pages/template/index/index",
+	// 			"iconPath": "static/images/home.png",
+	// 			"selectedIconPath": "static/images/homed.png",
+	// 			"text": "首页"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/template/task/index",
+	// 			"iconPath": "static/images/task.png",
+	// 			"selectedIconPath": "static/images/tasked.png",
+	// 			"text": "任务列表"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/template/mine/index",
+	// 			"iconPath": "static/images/mined.png",
+	// 			"selectedIconPath": "static/images/mine.png",
+	// 			"text": "个人中心"
+	// 		}]
+	// }
+}

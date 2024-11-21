@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "u-image": "/uview-ui/components/u-image/u-image",
+    "typewriter": "/pages/componentsA/jp-typewriter/index"
+  }
+}
