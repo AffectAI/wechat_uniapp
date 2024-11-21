@@ -6,7 +6,7 @@
 		<view  style="position: relative;width: 60px;height: 60px;background-image: url(https://datastream.affectai.cn/callmaterial/images/page5/icon4.png);background-position: center;background-repeat: no-repeat;background-size: 100%;">
 			<view 
 				class="camera-cover">
-				<camera  v-if="cameraShow" mode="normal"  flash="off" device-position="front" resolution="high" @stop="stop" @error="error"
+				<camera class="camera"  v-if="cameraShow" mode="normal"  flash="off" device-position="front" resolution="high" @stop="stop" @error="error"
 					style="width: 60px; height: 60px;margin: auto;border-radius: 50% !important;">
 					<cover-view class="cover">
 						<cover-view class="cover-top cover-item">
@@ -513,21 +513,6 @@
 			
 		}
 	}
-/* 	.modal {
-		position: fixed;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: 1110;
-		opacity: 1;
-		outline: 0;
-		text-align: center;
-		backface-visibility: hidden;
-		perspective: 2000rpx;
-		background: rgba(0, 0, 0, 0.6);
-		pointer-events: none;
-	} */
 
 	.modal::before {
 		content: "\200B";
@@ -612,18 +597,6 @@
 		position: relative;
 	}
 
-	.successImage {
-		// overflow: hidden;
-		// width: 600rpx;
-		// height: 600rpx;
-		// border-radius: 50%;
-		// position: absolute;
-		// top: 0;
-		// left: 50%;
-		// z-index: 999;
-		// transform: translateX(-50%);
-	}
-
 	.tipsTextCss {
 		animation: 1.5s tipsTextAnimation;
 		animation-duration: 1.5s;
@@ -661,14 +634,7 @@
 		background-color: #fff0;
 	}
 
-	camera {
-		width: 60px; height: 60px;overflow: hidden;border-radius: 50%;
-	}
 	.camera {
-		// width: 100vw;
-		// height: 100vw;
-		// transform: scale(1.05);
 		width: 60px; height: 60px;overflow: hidden;border-radius: 50%;
-		z-index: 999;
 	}
 </style>

@@ -16,7 +16,7 @@
 		<view  style="position: relative;width: 317px;height: 350px;margin: 25px auto 0 auto;background-image: url(https://datastream.affectai.cn/callmaterial/images/page5/icon4.png);background-position: center;background-repeat: no-repeat;background-size: 100%;">
 			<view 
 				class="camera-cover">
-				<camera v-if="cameraShow" mode="normal"  flash="off" device-position="front" resolution="high" @stop="stop" @error="error"
+				<camera class="camera" v-if="cameraShow" mode="normal"  flash="off" device-position="front" resolution="high" @stop="stop" @error="error"
 					style="width: 270px; height: 290px;margin: auto;border-radius: 50% !important;">
 					<cover-view class="cover">
 						<cover-view class="cover-top cover-item">
@@ -544,18 +544,6 @@
 		position: relative;
 	}
 
-	.successImage {
-		// overflow: hidden;
-		// width: 600rpx;
-		// height: 600rpx;
-		// border-radius: 50%;
-		// position: absolute;
-		// top: 0;
-		// left: 50%;
-		// z-index: 999;
-		// transform: translateX(-50%);
-	}
-
 	.successTips {
 		width: 185px !important;
 		height: 40px;
@@ -606,14 +594,7 @@
 		background-color: #fff0;
 	}
 
-	camera {
-		width: 270px; height: 290px;overflow: hidden;border-radius: 50%;
-	}
 	.camera {
-		// width: 100vw;
-		// height: 100vw;
-		// transform: scale(1.05);
 		width: 270px; height: 290px;overflow: hidden;border-radius: 50%;
-		z-index: 999;
 	}
 </style>

@@ -1,1 +1,0 @@
-<view class="page18-wrap"><cc-scrool-card vue-id="39e408b0-1" dataInfo="{{dataInfo}}" swiperIndex="{{swiperIndex}}" data-event-opts="{{[['^nextPage',[['nextPage']]],['^change',[['swiperChangeClick']]]]}}" bind:nextPage="__e" bind:change="__e" bind:__l="__l"></cc-scrool-card></view>
