@@ -1,6 +1,6 @@
 <template>
 	<view class="wrap">
-		<view v-if="!anib" style="width: 93%;display: flex;margin: 45px auto;align-items: center;">
+		<view v-if="!anib" style="width: 93%;display: flex;margin: 45px auto;align-items: center;padding-top: 50px;">
 			<view style="width: 81px;height: 81px;border-radius: 50%;background-color: #fff;margin-right: 17px;">
 				<image :src="gloAvtorUrl" style="width: 81px;height: 81px;border-radius: 50%;" mode=""></image>
 			</view>
@@ -124,7 +124,7 @@
 			</view>
 		</view>
 		
-		<view v-if="dialogueIndex >= 5 && !anib">
+		<view v-if="dialogueIndex >= 5 && !anib" style="padding-top: 50px;">
 			<view style="display: flex;margin-top: 100px;">
 				<view style="flex: 1;position: relative;">
 					<view style="display: block;text-align: center;min-height: 104px;">
@@ -223,7 +223,7 @@
 		</view>
 		
 		<!-- 进阶正式 -->
-		<view v-if="anib" style="width: 93%;margin: 45px auto;align-items: center;">
+		<view v-if="anib" style="width: 93%;margin: 45px auto;align-items: center;padding-top: 50px;">
 			<view style="display: flex;align-items: center;">
 				<view style="width: 81px;height: 81px;border-radius: 50%;background-color: #fff;margin-right: 17px;">
 					<image :src="gloAvtorUrl" style="width: 81px;height: 81px;border-radius: 50%;" mode=""></image>
@@ -334,12 +334,12 @@
 			<view style="width: 85%;margin: 68px auto 0 auto;;display: flex;justify-content: space-between;">
 				<view 
 				@click="thisBird_b" 
-				style="border-radius: 5px;width: 100px;height: 43px;line-height: 43px;background: #C4C4C4;color: #8E8E8E;font-size: 16px;text-align: center;">捕捉</view>
+				style="border-radius: 5px;width: 100px;height: 43px;line-height: 43px;background: #62c672;color: #fff;font-size: 16px;text-align: center;">捕捉</view>
 				<view 
 				v-if="dialogueIndex_b>=1"
 				:class="[(dialogueIndex_b >= 1) ? 'activeNext':'']"
 				@click="nextBird_b" 
-				style="border-radius: 5px;width: 100px;height: 43px;line-height: 43px;background: #C4C4C4;color: #fff;font-size: 16px;text-align: center;">
+				style="border-radius: 5px;width: 100px;height: 43px;line-height: 43px;background: #62c672;color: #fff;font-size: 16px;text-align: center;">
 					下一只</view>
 			</view>
 		</view>

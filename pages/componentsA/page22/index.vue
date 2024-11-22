@@ -4,8 +4,8 @@
 			<u-image width="35px" height="35px" src="https://datastream.affectai.cn/callmaterial/images/page3/pep.png"></u-image> <text style="margin-left:10px ;"> 1500</text>
 		</view> -->
 		
-		<view class="menu22" style="margin-top: 35px;">
-			<view class="item22" v-for="(item, index) in foodList">
+		<view class="menu22" style="margin-top: 70px;">
+			<view class="item22" v-for="(item, index) in foodList" :key="index">
 				<u-image width="100%" height="160px" :src="item.url"></u-image> 
 				<view class="name" :class="[item.status == true ? 'name-active' : '']">
 					<text>{{item.name}}</text>

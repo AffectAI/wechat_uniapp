@@ -1,6 +1,6 @@
 <template>
 	<view class="index-wrap32">
-		<!-- {{pageIndex}} -->
+		<!--  {{pageIndex}} -->
 		<!-- 金币 -->
 		<view class="top13" v-if="pageIndex == '13' || pageIndex == '18' || pageIndex == '20' || pageIndex == '22' || pageIndex == 'page13_upgrade'">
 			<view class="m-a">{{goldCoin}}</view>
@@ -13,12 +13,12 @@
 		<page4 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 4" />
 		<page5 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 5" />
 		<page6 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 6" />
-		<page7 @pageEvent="pageEvent" @setData="setData" v-if="pageIndex == 7" />
-		<page8 @pageEvent="pageEvent" v-if="pageIndex == 8" />
+		<page7 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" @setData="setData" v-if="pageIndex == 7" />
+		<page8 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 8" />
 		<page9 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 9" />
 		<page10 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 10"></page10>
 		<page11 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 11"></page11>
-		<page12 @pageEvent="pageEvent" v-if="pageIndex == 12"></page12>
+		<page12 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 12"></page12>
 		<page13 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" @setGoldCoin="setGoldCoin" @setJourney="setJourney" @setJourney2="setJourney2" @birdRm_start="birdRm_start" @birdRm_end="birdRm_end" v-if="pageIndex == 13"></page13>
 		<page13_next_desc @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 'page13_next_desc'"></page13_next_desc>
 		<page13_next_loading @pageEvent="pageEvent"  @setGoldCoin="setGoldCoin" v-if="pageIndex == 'page13_next_loading'" />
@@ -27,9 +27,9 @@
 		<page15 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 15" />
 		<page16 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 16" />
 		<page17 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 17" />
-		<page18 @pageEvent="pageEvent" @setRoute="setRoute" v-if="pageIndex == 18" />
+		<page18 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" @setRoute="setRoute" v-if="pageIndex == 18" />
 		<page19 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 19" />
-		<page20 @pageEvent="pageEvent" @setHotel="setHotel" v-if="pageIndex == 20" />
+		<page20 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" @setHotel="setHotel" v-if="pageIndex == 20" />
 		<page21 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" :Page21Params="Page21Params" v-if="pageIndex == 21" />
 		<page22 @pageEvent="pageEvent" @setAddFood="setAddFood" @setReceFood="setReceFood" @setFood="setFood" v-if="pageIndex == 22" />
 		<page23 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == 23" />
@@ -59,12 +59,11 @@
 			@detectFailed="detectFailed" >
 		</face-bio-assay-glo>
 		<view class="tips" :class="[isSuccess ? '' : 'errorTips']" v-if="(pageIndex >= 7 && !isSuccess && pageIndex != 35) || (pageIndex == 'page24_2' || pageIndex == 'page24_1' || pageIndex == 'page13_upgrade' || pageIndex == 'pageIndex' || pageIndex == 'page13_next_loading' || pageIndex == 'page13_next_desc')">
-			<u-image src="https://datastream.affectai.cn/callmaterial/images/page5/icon1.png" width="12px" height="11px" style="margin-right: 4px;"></u-image> 
-			{{ isSuccess ? '人脸检测成功' : tipsText}}
+			<!-- <u-image src="https://datastream.affectai.cn/callmaterial/images/page5/icon1.png" width="12px" height="11px" style="margin-right: 4px;"></u-image> -->
+			{{tipsText}}
 		</view>
 		
 
-		
 	</view>
 </template>
 
@@ -270,7 +269,6 @@
 				// console.log('=====音频临时路径recoreTempPath', this.recoreTempPath);
 				
 				const {pageIndex} = params;
-				// console.log(pageIndex, '---pageIndex');
 				
 				if(( !this.isSuccess) && (pageIndex != 35) && ( pageIndex > 7 || pageIndex == 'page24_2' || pageIndex == 'page24_1' || pageIndex == 'page13_upgrade' || pageIndex == 'pageIndex' || pageIndex == 'page13_next_loading' || pageIndex == 'page13_next_desc')) {
 					this.$refs.uToast.show({
@@ -308,35 +306,8 @@
 					this.liuyanTxt = params.text
 				}
 				
-				/**
-				 * 最后测评页
-				 * 
-				 * y=12.5*x+50
-				 * 
-				 * */ 
-			// 	if(pageIndex == 35) {
-			// 		// BFI-10 心境内观自我
-			// 		let score1 = parseFloat(this.scale_record.BFI_10.B1_T10) - parseFloat(this.scale_record.BFI_10.B1_T5);
-			// 		let score2 = parseFloat(this.scale_record.BFI_10.B1_T8) - parseFloat(this.scale_record.BFI_10.B1_T3);
-			// 		let score3 = parseFloat(this.scale_record.BFI_10.B1_T6) - parseFloat(this.scale_record.BFI_10.B1_T1);
-			// 		let score4 = parseFloat(this.scale_record.BFI_10.B1_T2) - parseFloat(this.scale_record.BFI_10.B1_T7);
-			// 		let score5 = parseFloat(this.scale_record.BFI_10.B1_T9) - parseFloat(this.scale_record.BFI_10.B1_T4);
-					
-			// 		// O 开放性	第10题减第5题得分
-			// 		this.scale_type_record.BFI_10_O = Math.floor((score1 * 12.5) + 50)
-			// 		// C 尽责性	第8题减第3题得分
-			// 		this.scale_type_record.BFI_10_C = Math.floor((score2 * 12.5) + 50)
-			// 		// E外向性	第6题减第1题得分
-			// 		this.scale_type_record.BFI_10_E = Math.floor((score3 * 12.5) + 50)
-			// 		// A宜人性	第2题减第7题得分
-			// 		this.scale_type_record.BFI_10_A = Math.floor((score4 * 12.5) + 50)
-			// 		// N神经性	第9题减第4题得分
-			// 		this.scale_type_record.BFI_10_N = Math.floor((score5 * 12.5) + 50)
-			
-			// }
-			
 				if(pageIndex == 2 ) {
-					this.innerAudioContext.play() // 播放
+					this.innerAudioContext.play() 
 				}
 				if(pageIndex == 3) {
 					let startTime = this.getCurrentFormattedTime();
@@ -777,7 +748,7 @@
 	}
 	.tips {
 		position: fixed;
-		top: 20px;
+		top: 65px;
 		left: 0;
 		right: 0;
 		margin: auto;

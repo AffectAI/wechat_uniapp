@@ -1116,7 +1116,6 @@
 				
 				for (let key in this.values) {
 					let index = key.split('value')[1];
-					console.log(index,key, this.values[key]);
 					if(index >= 1 && index <= 7) {
 						if(this.values[key] == '' || this.values[key] == null) {
 							status = true

@@ -2,18 +2,18 @@
 	<view class="page17-wrap" @click="next">
 		
 		<view style="width: 95%;display: flex;align-items: center;;position: absolute;top: 300px;left: 0;right: 0;margin: auto;justify-content: space-between;height: 180px;">
-			<u-image width="105px"height="119px" src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img4.png"></u-image>
-			<u-image width="105px"height="119px" src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img4.png"></u-image>
-			<u-image width="105px"height="119px" src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img4.png"></u-image>
+			<u-image width="105px" height="119px" src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img4.png"></u-image>
+			<u-image width="105px" height="119px" src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img4.png"></u-image>
+			<u-image width="105px" height="119px" src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img4.png"></u-image>
 		</view>
 		
 		<!-- 心湖 旅行伙伴2 -->
 		
 		<view class="dialogue">
 			<view class="top">旅行伙伴</view>
-			<view class="center">
+			<view class="center" style="height: 200px;">
 				<view style="width: 114px;">
-					<u-image width="114px" height="138px" :src="gloAvtorUrl"></u-image>
+					<u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>
 				<view style="flex: 1;margin: 0 15px">
 					王小明，前方出现了分叉路，每条路似乎会遇到不同的风景和事件。让我们仔细看看，抉择一下究竟该选择哪条路吧！

@@ -1,20 +1,6 @@
 <template>
   <view class="page51-wrap">
     <!-- 心湖倒影 -->
-    <!-- <view style="color: #000;font-size: 20px;text-align: center;margin-bottom: 25px;padding-top: 35px;">心湖倒影</view> -->
-    <!-- <view class="tips"> <u-image src="https://datastream.affectai.cn/callmaterial/images/page5/icon1.png" width="12px" height="11px" style="margin-right: 4px;"></u-image> 请将人脸置于屏幕之内，并确保面部完整显示</view> -->
-
-    <!-- 		
-		<view  style="position: relative;width: 317px;height: 350px;margin: 25px auto 0 auto;background-image: url(https://datastream.affectai.cn/callmaterial/images/page5/icon4.png);background-position: center;background-repeat: no-repeat;background-size: 100%;">
-			<view 
-				style="width: 270px; height: 290px;margin: auto;border-radius: 50%;position: absolute;top: 18px;right: 0;left: 0;bottom: 0;overflow: hidden;"
-				v-if="!cameraShow">
-				
-			</view>
-		</view> -->
-
-    <!-- <view class="start" @click="chooseVideo">开始拍摄</view> -->
-
     <face-bio-assay
       @pageEvent="pageEvent"
       :isDev="false"

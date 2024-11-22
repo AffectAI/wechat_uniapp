@@ -6,7 +6,7 @@
 			<view class="top">旅行伙伴</view>
 			<view class="center">
 				<view style="width: 114px;">
-					<u-image width="114px" height="138px" :src="gloAvtorUrl"></u-image>
+					<u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>
 				<view style="flex: 1;margin: 0 15px">
 					现在，我们正位于【心湖】旁，如果您能在湖中看到自己的倒影，这意味着您具备了登山的潜力。让我们先去湖边接受试炼吧！

@@ -6,14 +6,14 @@
 		
 		<view class="dialogue">
 			<view class="top">旅行伙伴</view>
-			<view class="center">
+			<view class="center" style="height: 200px;">
 				<view style="width: 114px;">
-					<u-image width="114px" height="138px" :src="gloAvtorUrl"></u-image>
+					<u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>
 				<view style="flex: 1;margin: 0 15px">
 					尊敬的用户，欢迎来到“心灵之山”。我是您的旅程伙伴，将陪伴您开启一段探索内心世界的旅程。此行将充满各种挑战与惊喜，让我们共同踏上这段旅途。
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+				<view style="width: 22px;display: flex;background-image: url('https://datastream.affectai.cn/callmaterial/images/page3/down.png');background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
 					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://datastream.affectai.cn/callmaterial/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
@@ -46,7 +46,7 @@
 <style lang="scss">
 	.page31-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/bg.png);
+		background-image: url('https://datastream.affectai.cn/callmaterial/images/page3/bg.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -56,7 +56,7 @@
 			width: 220px;
 			height: 220px;
 			margin: 0 auto;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/map.png);
+			background-image: url('https://datastream.affectai.cn/callmaterial/images/page3/map.png');
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;
@@ -65,7 +65,7 @@
 			width: 220px;
 			height: 340px;
 			margin: 0 auto;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/setp.png);
+			background-image: url('https://datastream.affectai.cn/callmaterial/images/page3/setp.png');
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;

@@ -4,9 +4,9 @@
 		
 		<view class="dialogue" >
 			<view class="top">旅行伙伴</view>
-			<view class="center">
+			<view class="center" style="height: 200px;">
 				<view style="width: 114px;">
-					<u-image width="114px" height="138px" :src="gloAvtorUrl"></u-image>
+					<u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>
 				<view style="flex: 1;margin: 0 15px">
 					<typewriter

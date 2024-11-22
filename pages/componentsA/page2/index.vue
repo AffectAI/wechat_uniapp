@@ -7,7 +7,7 @@
 				
 				<typewriter
 				  text="传闻，心灵之山的山顶有一份宝藏"
-				  :speed="100"
+				  :speed="70"
 				  @finished="finished1"
 				></typewriter>
 			</view>
@@ -15,7 +15,7 @@
 				<typewriter
 					v-if="seta"
 					text="但只有顺利通过重重考验"
-					:speed="100"
+					:speed="70"
 					@finished="finished2"
 				></typewriter>
 			</view>
@@ -23,7 +23,7 @@
 				<typewriter
 					v-if="setb"
 					text="才能深入探索自己内心中最真实的状态"
-					:speed="100"
+					:speed="70"
 					@finished="finished3"
 				></typewriter>
 			</view>
@@ -31,7 +31,7 @@
 				<typewriter
 					v-if="setc"
 					text="攀登心灵之山，寻觅宝藏吧！"
-					:speed="100"
+					:speed="70"
 					@finished="finished4"
 				></typewriter>
 				</view>
@@ -94,7 +94,7 @@
 <style lang="scss">
 	.page122-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page2/bg-2.png);
+		background-image: url('https://datastream.affectai.cn/callmaterial/images/page2/bg-2.png');
 		background-position: center;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;

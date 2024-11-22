@@ -1,7 +1,7 @@
 <template>
 	<view class="page1-wrap " >
 		<!-- 心湖倒影 -->
-		<view style="color: #000;font-size: 20px;text-align: center;margin-bottom: 25px;padding-top: 35px;">心湖倒影</view>
+		<view style="color: #000;font-size: 20px;text-align: center;margin-bottom: 25px;padding-top: 80px;">心湖倒影</view>
 		<view class="tips" v-if="!isSuccess"> 
 			<u-image src="https://datastream.affectai.cn/callmaterial/images/page5/icon1.png" width="12px" height="11px" style="margin-right: 4px;"></u-image> 
 			{{ tipsText }}
@@ -389,7 +389,7 @@
 			left: 0;
 			right: 0;
 			top: 701px;
-			bottom: 150px;
+			bottom: 250px;
 			margin: auto;
 			color: #000;
 			font-size: 14px;

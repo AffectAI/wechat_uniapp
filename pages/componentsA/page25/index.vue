@@ -23,7 +23,7 @@
 					src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img28.png">
 				</u-image>
 			</view>
-			<view class="center">
+			<view class="center" style="height: 200px;">
 				<view style="width: 114px;">
 					<u-image  width="114px" height="138px" :src="gloAvtorUrl"></u-image>
 				</view>

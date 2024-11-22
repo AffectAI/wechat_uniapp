@@ -60,7 +60,7 @@
 			</view> -->
 			<qiun-data-charts 
 				style="width: 95%;;margin: 0 auto;"
-			    type="line"
+			    type="mix"
 			    :opts="opts2"
 			    :chartData="chartData2"
 			/>
@@ -80,9 +80,7 @@
 			return {
 			   index: 1,
 			   chartData: {},
-			   chartData2: {},
-			   //您可以通过修改 config-ucharts.js 文件中下标为 ['radar'] 的节点来配置全局默认参数，如都是默认参数，此处可以不传 opts 。实际应用过程中 opts 只需传入与全局默认参数中不一致的【某一个属性】即可实现同类型的图表显示不同的样式，达到页面简洁的需求。
-				// TODO 雷达图没数据
+			   chartData2: {},				
 				opts: {
 					color: ["#66dcb0","#91CB74","#FAC858","#EE6666","#73C0DE","#3CA272","#FC8452","#9A60B4","#ea7ccc"],
 					padding: [5,5,5,5],
@@ -137,7 +135,7 @@
 						addPoint: true
 					},
 					legend: {
-					  show: false,
+					  show: true,
 					  lineHeight: 25
 					},
 					extra: {
@@ -212,9 +210,9 @@
 			},
 			getServerData() {
 				console.log(this.scale_type_record, '====.scale_type_record');
-			  //模拟从服务器获取数据时的延时
+			 
 			  setTimeout(() => {
-				//模拟服务器返回数据，如果数据格式和标准格式不同，需自行按下面的格式拼接
+				
 				let res = {
 					categories: ["N 神经质","C 尽责性","A 宜人性","O 开放性","E 外向性"],
 					series: [
@@ -234,16 +232,23 @@
 			  }, 10);
 			},
 			getServerData2() {
-			  //模拟从服务器获取数据时的延时
+			 
 			  setTimeout(() => {
-				//模拟服务器返回数据，如果数据格式和标准格式不同，需自行按下面的格式拼接
+				
 				let res = {
 					categories: ["0","10", '20', '30', '40', '50', '60'],
 					series: [
 					  {
-						name: "成交量A",
+						name: "风险程度",
 						data: ["0","10", '20', '30', '40', '50', '60']
-					  }
+					  },
+					  {
+						  name: "点",
+						  index: 2,
+						  type: "point",
+						  color: "#f04864",
+						  data: [0,0,0,3,0,0]
+						}
 					]
 				  };
 				this.chartData2 = JSON.parse(JSON.stringify(res));

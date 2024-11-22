@@ -5,9 +5,9 @@
 		
 		<view class="dialogue">
 			<view class="top">旅行伙伴</view>
-			<view class="center">
+			<view class="center" style="height: 200px;">
 				<view style="width: 114px;">
-					<u-image width="114px" height="138px" :src="gloAvtorUrl"></u-image>
+					<u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>
 				<view style="flex: 1;margin: 0 15px">
 					那我们继续前进吧，山上还有许多精彩的奇遇。巧遇这位森林猎手，听说他经常会拦住路过的旅人，让大家帮助他捕捉小鸟。

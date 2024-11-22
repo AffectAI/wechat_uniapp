@@ -3,9 +3,9 @@
 		<!-- 心湖 旅行伙伴2 -->
 		<view class="dialogue">
 			<view class="top">旅行伙伴</view>
-			<view class="center">
+			<view class="center" style="height: 200px;">
 				<view style="width: 114px;">
-					<u-image  width="114px" height="138px" :src="gloAvtorUrl"></u-image>
+					<u-image  width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>
 				<view style="flex: 1;margin: 0 15px">
 					你选择在<text v-if="roomIndex">{{roomList[roomIndex-1].name}}</text>进行休息！听说那里会提供不少别具一格的山顶美食，您可以提前预定您想享用的两道菜肴哦~
@@ -20,7 +20,7 @@
 
 <script>
 	export default {
-		props: ['gloAvtorUrl'],
+		props: ['gloAvtorUrl', 'Page21Params'],
 		data() {
 			return {
 				roomIndex: null,
@@ -32,9 +32,8 @@
 				]
 			}
 		},
-		props: ['Page21Params'],
 		onLoad(options) {
-			
+			console.log(this.gloAvtorUrl)
 		},
 		mounted() {
 			this.$nextTick(() => {
