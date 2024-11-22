@@ -125,7 +125,7 @@
 		</view>
 		
 		<view v-if="dialogueIndex >= 6 && !anib" style="padding-top: 50px;">
-			<view style="display: flex;margin-top: 100px;">
+			<view style="display: flex;margin-top: 10px;">
 				<view style="flex: 1;position: relative;">
 					<view style="display: block;text-align: center;min-height: 104px;">
 						<image :src="birdList[randNuma-1].url" style="width: 65px;height: 65px;margin: 0 auto 28px auto;display: block;" mode=""></image>
@@ -181,7 +181,7 @@
 				<view 
 					@click="getBird" 
 					:class="[(dialogueIndex == 10 || dialogueIndex == 13) ? 'activeNext' : '']"
-					style="border-radius: 5px;width: 100px;height: 43px;line-height: 43px;background: #c4c4c4;color: #8E8E8E;font-size: 16px;text-align: center;position: relative;">
+					style="border-radius: 5px;width: 100px;height: 43px;line-height: 43px;background: #c4c4c4;color: #fff;font-size: 16px;text-align: center;position: relative;">
 					
 					捕捉
 					<image 
@@ -256,7 +256,7 @@
 				</view>
 			</view>
 			
-			<view style="display: flex;margin-top: 100px;">
+			<view style="display: flex;margin-top: 10px;">
 				<view style="flex: 1;position: relative;">
 					<view style="display: block;text-align: center;min-height: 104px;">
 						<image :src="birdList[randNuma-1].url" style="width: 65px;height: 65px;margin: 0 auto 28px auto;display: block;" mode=""></image>

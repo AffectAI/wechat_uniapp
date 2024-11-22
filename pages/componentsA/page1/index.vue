@@ -290,7 +290,7 @@
             </view>
 
             <view style="margin-bottom: 10px">
-              我们如何保护您的个人信息<br />
+              <view class="font16">我们如何保护您的个人信息</view><br />
               我们采取符合业界标准的安全防护措施保护您的个人信息，使其免受未经授权的访问、公开披露、使用、修改、损坏或丢失，例如：
             </view>
 
@@ -321,7 +321,7 @@
             </view>
 
             <view style="margin-bottom: 10px">
-              回复您的请求<br />
+              <view class="font16">回复您的请求</view><br />
               受限于适用法律，您可联系公司提交您的请求。<br />
             </view>
 
