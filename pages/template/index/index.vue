@@ -38,7 +38,7 @@
 		<page24_2 @pageEvent="pageEvent" v-if="pageIndex == 'page24_2'" />
 		<page25 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl"   v-if="pageIndex == 25" />
 		<page26 ref="page26" @setRecore="setRecore" @record_start="record_start" @record_end="record_end" @pageEvent="pageEvent" :liuyanTxt="liuyanTxt" v-if="pageIndex == 26" />
-		<page27 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == '27'" />
+		<page27 ref="page27" @pageEvent="pageEvent" :isSuccess="isSuccess"  :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == '27'" />
 		<page28 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == '28'" />
 		<page29 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" v-if="pageIndex == '29'" />
 		<page30 @pageEvent="pageEvent" :gloAvtorUrl="gloAvtorUrl" @tree_start="tree_start" @tree_end="tree_end" @setBirdRecore="setBirdRecore" v-if="pageIndex == 30" />
@@ -49,8 +49,6 @@
 		<page35 @pageEvent="pageEvent" :person_info="person_info" :scale_type_record="scale_type_record" v-if="pageIndex == 35"></page35>
 		
 		<u-toast ref="uToast" />
-		
-		<!-- 检测人脸 -->
 		<face-bio-assay-glo ref="face_glo" 
 			v-if="(pageIndex != 35 && pageIndex >= 7) || pageIndex == 'page24_2' || pageIndex == 'page24_1' || pageIndex == 'page13_upgrade' || pageIndex == 'pageIndex' || pageIndex == 'page13_next_loading' || pageIndex == 'page13_next_desc'" 
 			:isDev="false" 
@@ -58,7 +56,7 @@
 			@setFaceStatus="setFaceStatus" 
 			@detectFailed="detectFailed" >
 		</face-bio-assay-glo>
-		<view class="tips" :class="[isSuccess ? '' : 'errorTips']" v-if="(pageIndex >= 7 && !isSuccess && pageIndex != 35) || (pageIndex == 'page24_2' || pageIndex == 'page24_1' || pageIndex == 'page13_upgrade' || pageIndex == 'pageIndex' || pageIndex == 'page13_next_loading' || pageIndex == 'page13_next_desc')">
+		<view class="tips" :class="[isSuccess ? '' : 'errorTips']" v-if="(pageIndex >= 7 && tipsText && !isSuccess && pageIndex != 35) || (pageIndex == 'page24_2' || pageIndex == 'page24_1' || pageIndex == 'page13_upgrade' || pageIndex == 'pageIndex' || pageIndex == 'page13_next_loading' || pageIndex == 'page13_next_desc')">
 			<!-- <u-image src="https://datastream.affectai.cn/callmaterial/images/page5/icon1.png" width="12px" height="11px" style="margin-right: 4px;"></u-image> -->
 			{{tipsText}}
 		</view>
@@ -269,13 +267,14 @@
 				// console.log('=====音频临时路径recoreTempPath', this.recoreTempPath);
 				
 				const {pageIndex} = params;
-				
-				if(( !this.isSuccess) && (pageIndex != 35) && ( pageIndex > 7 || pageIndex == 'page24_2' || pageIndex == 'page24_1' || pageIndex == 'page13_upgrade' || pageIndex == 'pageIndex' || pageIndex == 'page13_next_loading' || pageIndex == 'page13_next_desc')) {
+				if(( !this.isSuccess) && (pageIndex != 35) && ( pageIndex > 7  ||  pageIndex == 'page24_2' || pageIndex == 'page24_1' || pageIndex == 'page13_upgrade' || pageIndex == 'pageIndex' || pageIndex == 'page13_next_loading' || pageIndex == 'page13_next_desc')) {
+
 					this.$refs.uToast.show({
 						title: '请将人脸置于屏幕中间，并确保面部完整显示',
 						type: 'error',
 					})
 					this.tipsText = '请将人脸置于屏幕中间，并确保面部完整显示';
+					
 					return;
 				}
 				
@@ -458,6 +457,7 @@
 					this.innerAudioContext_27.play();
 				}
 				if(pageIndex == 28) {
+					
 					this.innerAudioContext_27.destroy();
 					let startTime = this.getCurrentFormattedTime();
 					this.page_time.page27_start = startTime;
@@ -553,9 +553,7 @@
 				if(pageIndex == 36) {
 					let startTime = this.getCurrentFormattedTime();
 					this.page_time.page35_start = startTime;
-					
 				}
-				
 			},
 			// 人脸检测-全局
 			setFaceStatus(params) {
@@ -568,10 +566,6 @@
 				if(status == false) {
 					this.isSuccess = false;
 					this.tipsText = msg;
-					// this.$refs.uToast.show({
-					// 	title: msg,
-					// 	type: 'error',
-					// })
 				}
 			},
 			uploadVideo(options) {

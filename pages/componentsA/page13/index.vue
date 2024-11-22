@@ -213,7 +213,7 @@
 		<view v-if="anib" style="width: 93%;margin: 45px auto;align-items: center;padding-top: 50px;">
 			<view style="display: flex;align-items: center;">
 				<view style="width: 81px;height: 81px;border-radius: 50%;background-color: #fff;margin-right: 17px;">
-					<image src="../../../static/images/mine.png" style="width: 81px;height: 81px;border-radius: 50%;" mode=""></image>
+					<image src="gloAvtorUrl" style="width: 81px;height: 81px;border-radius: 50%;" mode=""></image>
 				</view>
 				<view style="background-color: rgba(255,255,255,0.7);padding: 10px 13px;display: flex;height: 70px;border-radius: 8px;">
 					<view style="min-width: 199px;font-size: 12px;color: #434343">

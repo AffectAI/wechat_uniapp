@@ -23,7 +23,6 @@
 		props: ['gloAvtorUrl'],
 		data() {
 			return {
-				
 				list1: [
 					{name: '很不同意', value: '0'},
 					{name: '很同意', value: '1'},
@@ -48,7 +47,7 @@
 <style lang="scss">
 	.page1-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page5/bg.png) !important;
+		background-image: url('https://datastream.affectai.cn/callmaterial/images/page5/bg.png') !important;
 		background-position: center !important;
 		background-size: 100% 100% !important;
 		background-repeat: no-repeat;

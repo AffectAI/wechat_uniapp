@@ -1,8 +1,6 @@
 <template>
 	<view class="page27-wrap" @click="next">
-		<view class="cover" :style="{opacity: opacity}">
-			
-		</view>
+		<view class="cover" :style="{opacity: opacity}"></view>
 		<!-- 心湖 旅行伙伴2 -->
 		
 		<view class="dialogue" >
@@ -22,6 +20,7 @@
 				</view>
 			</view>
 		</view>
+		<u-toast ref="uToast" />
 	</view>
 </template>
  
@@ -34,26 +33,34 @@
 				time: null,
 			}
 		},
-		props: ['gloAvtorUrl'],
+		props: ['gloAvtorUrl', 'isSuccess'],
 		components: {
 			typewriter
 		},
 		beforeDestroy() {
-			console.log('=---beforeDestroy27');
+			
 			if(this.time) {
 				clearInterval(this.time);
 			}
+			this.time = null;
 		},
 		methods: {
+			nextCover() {
+				this.$emit('pageEvent', {pageIndex: '28'})
+			},
 			next() {
+				if(!this.isSuccess) {
+					this.$refs.uToast.show({
+						title: '请将人脸置于屏幕中间，并确保面部完整显示',
+						type: 'error',
+					})
+					return
+				}
 				if(!this.time) {
 					this.time = setInterval(() => {
 						if(this.opacity >= 0.8) {
 							this.opacity = 0.8;
 							clearInterval(this.time)
-							// uni.navigateTo({
-							// 	url: '/pages/componentsA/page28/index'
-							// })
 							this.$emit('pageEvent', {pageIndex: '28'})
 						}
 						this.opacity += 0.08;

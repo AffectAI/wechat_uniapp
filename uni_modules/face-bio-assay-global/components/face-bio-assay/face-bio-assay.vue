@@ -61,7 +61,7 @@
 			return {
 				cameraShow: false,
 				show: false,
-				tipsText: '请将人脸置于屏幕之内，并确保面部完整显示',
+				tipsText: '',
 				isSuccess: false, //是否检测完成
 				face: {},
 				actionsList: null,
@@ -251,11 +251,8 @@
 			},
 			// 关闭
 			hideModal() {
-				// uni.stopFaceDetect()
-				// this.show = false
 				this.tipsText = '检测不到人脸'
 				this.face = {}
-				// this.isSuccess = false
 			},
 			// 拍照
 			takePhoto() {

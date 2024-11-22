@@ -269,7 +269,7 @@
 	}
 	.page7-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page5/bg.png);
+		background-image: url('https://datastream.affectai.cn/callmaterial/images/page5/bg.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
