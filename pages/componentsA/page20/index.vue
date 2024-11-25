@@ -9,7 +9,7 @@
         width="100%"
         height="200px"
         style="border-top-left-radius: 10px; border-top-right-radius: 10px"
-        src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img13.png"
+        src="https://dfs.affectai.cn/affect-material/images/page20-1024/img13.png"
       ></u-image>
       <view class="text">
         <view class="title"> 林间石舍 | ¥600/晚 | 赠送单人早餐券 </view>
@@ -27,7 +27,7 @@
         width="100%"
         height="200px"
         style="border-top-left-radius: 10px; border-top-right-radius: 10px"
-        src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img11.png"
+        src="https://dfs.affectai.cn/affect-material/images/page20-1024/img11.png"
       ></u-image>
       <view class="text">
         <view class="title"> 清泉山庄 | ¥800/晚 | 赠送双人下午茶券 </view>
@@ -45,7 +45,7 @@
         width="100%"
         height="200px"
         style="border-top-left-radius: 10px; border-top-right-radius: 10px"
-        src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img12.png"
+        src="https://dfs.affectai.cn/affect-material/images/page20-1024/img12.png"
       ></u-image>
       <view class="text">
         <view class="title"> 峰顶客栈 ¥1000/晚赠送晚餐八折券 </view>
@@ -92,7 +92,7 @@ export default {
       obeyMuteSwitch: false,
     });
     this.innerAudioContext_n.src =
-      "https://datastream.affectai.cn/callmaterial/images/audio/mouse_sound/a4.mp3";
+      "https://dfs.affectai.cn/affect-material/images/audio/mouse_sound/a4.mp3";
   },
   methods: {
     pre() {
@@ -133,7 +133,7 @@ export default {
 <style lang="scss" scoped>
 .page20-wrap {
   min-height: 100vh;
-  background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img10.png);
+  background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img10.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -151,7 +151,7 @@ export default {
 // 	padding: 0 10px;
 // }
 // .bgtop {
-// 	background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img11.png);
+// 	background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img11.png);
 // 	background-position: top;
 // 	background-size: cover;
 // 	background-repeat: no-repeat;
@@ -187,7 +187,7 @@ export default {
   }
 }
 // .item1-20 {
-//   // background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img11.png);
+//   // background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img11.png);
 // }
 .btnBox {
   margin-top: 50px;

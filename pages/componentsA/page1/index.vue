@@ -1,71 +1,30 @@
 <template>
   <view class="index-wrap">
-    <!-- <image src="https://datastream.affectai.cn/callmaterial/images/page1/title.png" mode=""></image> -->
-    <view class="index-tit"> </view>
-
-    <view class="next" @click="nexta"></view>
-
     <!-- 选择伙伴 -->
     <view class="privacy" v-if="step == 'b'">
       <view class="privacy-wrap">
         <view style="padding: 20px; font-size: 16px">选择旅行伙伴</view>
-        <view style="padding: 10px 30px; display: flex">
+        <view class="privacy-wrap-checked">
           <view
+            class="checked-image"
             v-for="(item, index) in guidAPeops"
             :key="index"
-            :style="{ marginLeft: index == 1 || index == 3 ? '10px' : '' }"
             :class="[item.index == indexsed ? 'acted' : '']"
             @click="indexed(item)"
-            style="
-              width: 150px;
-              border-radius: 6px;
-              box-sizing: border-box;
-              padding: 5px;
-            "
           >
-            <u-image
-              height="150px"
-              style="height: 150px"
-              :src="item.url"
-            ></u-image>
+            <u-image height="150px" :src="item.url"></u-image>
           </view>
         </view>
-        <view style="padding: 10px 30px; display: flex">
-          <view
-            v-for="(item, index) in guidAPeops2"
-            :key="index"
-            :class="[item.index == indexsed ? 'acted' : '']"
-            @click="indexed(item)"
-            :style="{ marginLeft: index == 1 || index == 3 ? '10px' : '' }"
-            style="
-              width: 150px;
-              border-radius: 6px;
-              box-sizing: border-box;
-              padding: 5px;
-            "
+        <view class="nextBtn">
+          <u-button
+            :custom-style="btnstyle"
+            @click="nextc"
+            :ripple="true"
+            size="medium"
           >
-            <u-image
-              height="150px"
-              style="height: 150px"
-              :src="item.url"
-            ></u-image>
-          </view>
+            下一步
+          </u-button>
         </view>
-        <view
-          class="read-true"
-          style="
-            width: 150px;
-            line-height: 50px;
-            line-height: 50px;
-            border-radius: 5px;
-            text-align: center;
-            background-color: #0cb1bd;
-            color: #fff;
-            margin: 20px auto;
-          "
-          @click="nextc"
-          >下一步</view
-        >
       </view>
     </view>
 
@@ -90,7 +49,7 @@
 
         <view style="padding: 0 23px; margin-top: 30%">
           <u-checkbox
-            active-color="#25860F"
+            active-color="#07c160"
             @change="checkboxChange"
             v-model="readChecked"
             :disabled="!readChecked"
@@ -101,7 +60,7 @@
               <text
                 style="
                   font-size: 14px;
-                  color: #25860f;
+                  color: #07c160;
                   text-decoration: underline;
                 "
                 >《心理测评隐私政策》</text
@@ -119,12 +78,22 @@
             >请阅读并勾选《心理测评隐私政策》</view
           >
         </view>
-        <view
-          class="readtrue"
-          :class="[readChecked ? 'readtrued' : 'readtrue']"
-          @click="next"
-          >我以悉知，开始测评</view
-        >
+        <view class="readtrue">
+          <u-button
+            :custom-style="{
+              background: '#0cb1bd',
+              color: '#fff',
+              width: '268px',
+              height: '66px',
+              fontSize: '16px',
+            }"
+            :disabled="!readChecked"
+            :ripple="true"
+            @click="next"
+          >
+            我已悉知，开始测评
+          </u-button>
+        </view>
       </view>
 
       <!-- 协议内容 -->
@@ -342,7 +311,18 @@
               我们的服务并非针对未成年人所提供。未获父母/监护人（为其自身并代表您）对本政策的同意，未成年人不得使用我们的服务。<br />
             </view>
           </view>
-          <view class="read-true" @click="agreen">同意</view>
+          <view class="agreen">
+            <u-button
+              :custom-style="btnstyle"
+              @click="agreen"
+              :ripple="true"
+              size="medium"
+            >
+              同意
+            </u-button>
+          </view>
+
+          <!-- <view class="read-true" @click="agreen">同意</view> -->
         </view>
       </view>
     </view>
@@ -352,15 +332,24 @@
 </template>
 
 <script>
+const pep = require("../../../static/uview/example/pep.png");
+const pep2 = require("../../../static/uview/example/pep2.png");
+const pep3 = require("../../../static/uview/example/pep3.png");
+const pep4 = require("../../../static/uview/example/pep4.png");
 export default {
   data() {
     return {
       step: "b",
+      btnstyle: {
+        color: "#fff",
+        width: "200px",
+        background: "#0cb1bd",
+      },
       itemed: "",
       indexsed: 100,
       readChecked: false,
-      priacyContent: false,
-      src: "https://datastream.affectai.cn/callmaterial/images/page1/title.png",
+      priacyContent: false, //协议内容
+      // src: "https://dfs.affectai.cn/affect-material/images/page1/title.png",
       list: [
         {
           name: "《心理测评隐私政策》",
@@ -371,21 +360,19 @@ export default {
       guidAPeops: [
         {
           index: 0,
-          url: "https://datastream.affectai.cn/callmaterial/images/page3/pep.png",
+          url: pep,
         },
         {
           index: 1,
-          url: "https://datastream.affectai.cn/callmaterial/images/page3/pep2.png",
+          url: pep2,
         },
-      ],
-      guidAPeops2: [
         {
           index: 2,
-          url: "https://datastream.affectai.cn/callmaterial/images/page3/pep3.png",
+          url: pep3,
         },
         {
           index: 3,
-          url: "https://datastream.affectai.cn/callmaterial/images/page3/pep4.png",
+          url: pep4,
         },
       ],
       innerAudioContext: null,
@@ -401,7 +388,7 @@ export default {
     });
     // 鼠标音效
     this.innerAudioContext.src =
-      "https://datastream.affectai.cn/callmaterial/images/audio/mouse_sound/a2.mp3";
+      "https://dfs.affectai.cn/affect-material/images/audio/mouse_sound/a2.mp3";
   },
   methods: {
     nexta() {
@@ -416,35 +403,37 @@ export default {
       this.$emit("gloAvtor", item.url);
     },
     readYs() {
-      console.log(1);
       this.priacyContent = true;
     },
     checkboxGroupChange() {},
     agreen() {
-      this.priacyContent = false;
-      this.readChecked = true;
+      setTimeout(() => {
+        this.priacyContent = false;
+        this.readChecked = true;
+      }, 200);
     },
     nextc() {
       if (!this.itemed) {
-        this.$refs.uToast.show({
+        return this.$refs.uToast.show({
           title: "请选择旅行伙伴~",
-          type: "error",
+          type: "warning",
         });
-        return;
       }
-      this.step = "c";
+      setTimeout(() => {
+        this.step = "c";
+      }, 500);
     },
     next() {
       if (!this.readChecked) {
-        this.$refs.uToast.show({
+        return this.$refs.uToast.show({
           title: "请阅读并勾选《心理测评隐私政策》",
           type: "error",
         });
-        return;
       }
-
-      this.innerAudioContext.play(); // 播放
-      this.$emit("pageEvent", { pageIndex: 2 });
+      setTimeout(() => {
+        this.innerAudioContext.play(); // 播放
+        this.$emit("pageEvent", { pageIndex: 2 });
+      }, 500);
     },
   },
 };
@@ -453,36 +442,11 @@ export default {
 <style lang="scss">
 .index-wrap {
   min-height: 100vh;
-  background-image: url("https://datastream.affectai.cn/callmaterial/images/page1/bg1.png");
+  background-image: url("https://dfs.affectai.cn/affect-material/images/page1/bg1.png");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
-  // background-size: ;
-
-  .index-tit {
-    width: 316px;
-    margin: 0 auto;
-    height: 230px;
-    background-image: url("https://datastream.affectai.cn/callmaterial/images/page1/title.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .next {
-    width: 316px;
-    position: absolute;
-    bottom: 209px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    height: 80px;
-    background-image: url("https://datastream.affectai.cn/callmaterial/images/page1/start.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 500;
-  }
 
   .privacy {
     position: fixed;
@@ -490,7 +454,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-image: url("https://datastream.affectai.cn/callmaterial/images/page1/bg1.png");
+    background-image: url("https://dfs.affectai.cn/affect-material/images/page1/bg1.png");
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -509,19 +473,34 @@ export default {
       z-index: 601;
       border-radius: 10px;
 
+      .privacy-wrap-checked {
+        display: flex;
+        padding: 10px 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        .acted {
+          background: #0cb1bd;
+          padding: 4px !important;
+        }
+        .checked-image {
+          width: 50%;
+          padding: 10px;
+          border-radius: 8px;
+        }
+      }
+      .nextBtn {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
       .readtrue {
-        width: 268px;
-        height: 66px;
-        border-radius: 10px;
-        color: #575858;
-        background-image: url("https://datastream.affectai.cn/callmaterial/images/page2/read-2.png");
-        background-position: center;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        text-align: center;
-        line-height: 66px;
-        margin: 30px auto 0 auto;
-        font-size: 18px;
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
       }
     }
 
@@ -540,36 +519,30 @@ export default {
       border-radius: 10px;
 
       .font16 {
-        font-size: 16px;
+        font-size: 19px;
         color: #121212;
+        font-family: Microsoft YaHei;
+        font-weight: 500;
       }
       .font15 {
-        font-size: 15px;
+        font-size: 16px;
         color: #312f2f;
+        font-family: fantasy;
+        font-weight: 100;
       }
       .font14 {
         font-size: 14px;
         color: #464747;
+        font-family: Arial;
       }
-      .read-true {
-        width: 93px;
-        height: 45px;
-        line-height: 45px;
-        background-color: #0cb1bd;
-        margin: 10px auto;
-        text-align: center;
-        border-radius: 5px;
+      .agreen {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
       }
     }
   }
-}
-</style>
-
-<style lang="scss">
-.readtrued {
-  background: #05dac6 !important;
-}
-.acted {
-  border: 2px solid #67d499;
 }
 </style>

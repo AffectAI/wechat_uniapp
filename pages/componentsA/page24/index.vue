@@ -1497,7 +1497,7 @@
 	}
 	.page24-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img34.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img34.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

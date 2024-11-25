@@ -13,8 +13,8 @@
 				<view style="flex: 1;margin: 0 15px">
 					王小明，我们又向上前进了一步，现在正位于【山腰】，让我们继续往前吧！
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://datastream.affectai.cn/callmaterial/images/page7/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
-					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://datastream.affectai.cn/callmaterial/images/page3/down.png"></u-image> -->
+				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page7/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
 		</view>
@@ -43,7 +43,7 @@
 <style lang="scss">
 	.page16-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page7/bg.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page7/bg.png);
 		
 		background-position: center;
 		background-size: cover;
@@ -54,7 +54,7 @@
 			width: 220px;
 			height: 180px;
 			margin: 0 auto;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img1.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img1.png);
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;
@@ -63,7 +63,7 @@
 			width: 220px;
 			height: 340px;
 			margin: 0 auto;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img2.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img2.png);
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;

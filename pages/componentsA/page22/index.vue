@@ -1,7 +1,7 @@
 <template>
 	<view class="page22-wrap" style="padding-top: 20px;">
 		<!-- <view class="gold">
-			<u-image width="35px" height="35px" src="https://datastream.affectai.cn/callmaterial/images/page3/pep.png"></u-image> <text style="margin-left:10px ;"> 1500</text>
+			<u-image width="35px" height="35px" src="https://dfs.affectai.cn/affect-material/images/page3/pep.png"></u-image> <text style="margin-left:10px ;"> 1500</text>
 		</view> -->
 		
 		<view class="menu22" style="margin-top: 70px;">
@@ -11,8 +11,8 @@
 					<text>{{item.name}}</text>
 					<text v-if="!item.status" @click="addFood(item, index)" class="addFood"></text>
 					<text v-if="item.status" @click="receFood(item, index)" class="receFood"></text>
-					<!-- <u-image v-if="!item.status" width="20px" height="20px"  src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img22.png"></u-image>
-					<u-image v-if="item.status" width="20px" height="20px"  src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img23.png"></u-image> -->
+					<!-- <u-image v-if="!item.status" width="20px" height="20px"  src="https://dfs.affectai.cn/affect-material/images/page20-1024/img22.png"></u-image>
+					<u-image v-if="item.status" width="20px" height="20px"  src="https://dfs.affectai.cn/affect-material/images/page20-1024/img23.png"></u-image> -->
 				</view>
 			</view>
 			
@@ -32,12 +32,12 @@
 			return {
 				count: 0,
 				foodList: [
-					{name: '新鲜野菜沙拉￥32', url: 'https://datastream.affectai.cn/callmaterial/images/page20-1024/img27.png', price: '32', status: false},
-					{name: '野生蘑菇炖鸡￥88', url: 'https://datastream.affectai.cn/callmaterial/images/page20-1024/img20.png', price: '88',status: false},
-					{name: '山珍海鲜汤￥32', url: 'https://datastream.affectai.cn/callmaterial/images/page20-1024/img21.png', price: '32',status: false},
-					{name: '山泉冰激凌￥26', url: 'https://datastream.affectai.cn/callmaterial/images/page20-1024/img28b.png', price: '26',status: false},
-					{name: '烧烤果蔬拼盘￥96', url: 'https://datastream.affectai.cn/callmaterial/images/page20-1024/img24.png', price: '96',status: false},
-					{name: '竹笋烧肉片￥58', url: 'https://datastream.affectai.cn/callmaterial/images/page20-1024/img25.png', price: '58',status: false},
+					{name: '新鲜野菜沙拉￥32', url: 'https://dfs.affectai.cn/affect-material/images/page20-1024/img27.png', price: '32', status: false},
+					{name: '野生蘑菇炖鸡￥88', url: 'https://dfs.affectai.cn/affect-material/images/page20-1024/img20.png', price: '88',status: false},
+					{name: '山珍海鲜汤￥32', url: 'https://dfs.affectai.cn/affect-material/images/page20-1024/img21.png', price: '32',status: false},
+					{name: '山泉冰激凌￥26', url: 'https://dfs.affectai.cn/affect-material/images/page20-1024/img28b.png', price: '26',status: false},
+					{name: '烧烤果蔬拼盘￥96', url: 'https://dfs.affectai.cn/affect-material/images/page20-1024/img24.png', price: '96',status: false},
+					{name: '竹笋烧肉片￥58', url: 'https://dfs.affectai.cn/affect-material/images/page20-1024/img25.png', price: '58',status: false},
 				]
 			}
 		},
@@ -85,7 +85,7 @@
 <style lang="scss">
 	.page22-wrap {
 		min-height: 100vh;
-		// background-image: url(https://datastream.affectai.cn/callmaterial/images/page4/bg.png);
+		// background-image: url(https://dfs.affectai.cn/affect-material/images/page4/bg.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

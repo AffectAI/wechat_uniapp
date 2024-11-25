@@ -13,8 +13,8 @@
 				<view style="flex: 1;margin: 0 15px">
 					恭喜您顺利通过“心镜”初步了解了自己的内心。在后续的旅程中，请确保您能够被心镜完整地映照。它将在旅途中积累能量，帮助您慢慢深入自己的内心。现在，让我们带上心镜，开始正式的登山之旅吧！
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
-					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://datastream.affectai.cn/callmaterial/images/page3/down.png"></u-image> -->
+				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
 		</view>
@@ -43,7 +43,7 @@
 <style lang="scss">
 	.page1-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page6/bg.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page6/bg.png);
 		background-position: right;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -53,7 +53,7 @@
 		.img1 {
 			width: 220px;
 			height: 220px;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page6/icon1.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page6/icon1.png);
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;
@@ -64,7 +64,7 @@
 			width: 185px;
 			height: 220px;
 			margin: 0 auto;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page6/pep.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page6/pep.png);
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;

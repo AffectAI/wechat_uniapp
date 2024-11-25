@@ -12,8 +12,8 @@
 				<view style="flex: 1;margin: 0 15px">
 					那我们继续前进吧，山上还有许多精彩的奇遇。巧遇这位森林猎手，听说他经常会拦住路过的旅人，让大家帮助他捕捉小鸟。
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://datastream.affectai.cn/callmaterial/images/page7/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
-					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://datastream.affectai.cn/callmaterial/images/page3/down.png"></u-image> -->
+				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page7/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
 		</view>
@@ -42,7 +42,7 @@
 <style lang="scss">
 	.page1-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page8/bg.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page8/bg.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -53,7 +53,7 @@
 			width: 282px;
 			height: 365px;
 			margin: auto;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page8/pep.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page8/pep.png);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -64,7 +64,7 @@
 			width: 220px;
 			height: 340px;
 			margin: 0 auto;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page7/setp.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page7/setp.png);
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;

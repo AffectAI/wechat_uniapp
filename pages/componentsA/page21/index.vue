@@ -10,8 +10,8 @@
 				<view style="flex: 1;margin: 0 15px">
 					你选择在<text v-if="roomIndex">{{roomList[roomIndex-1].name}}</text>进行休息！听说那里会提供不少别具一格的山顶美食，您可以提前预定您想享用的两道菜肴哦~
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
-					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://datastream.affectai.cn/callmaterial/images/page3/down.png"></u-image> -->
+				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
 		</view>
@@ -26,9 +26,9 @@
 				roomIndex: null,
 				bgImg: null,
 				roomList: [
-					{index: 1, name: '林间石舍',  url: 'https://datastream.affectai.cn/callmaterial/images/page20-1024/img16.png'},
-					{index: 2, name: '清泉山庄',  url: 'https://datastream.affectai.cn/callmaterial/images/page20-1024/img14.png'},
-					{index: 3, name: '峰顶客栈',  url: 'https://datastream.affectai.cn/callmaterial/images/page20-1024/img15.png'},
+					{index: 1, name: '林间石舍',  url: 'https://dfs.affectai.cn/affect-material/images/page20-1024/img16.png'},
+					{index: 2, name: '清泉山庄',  url: 'https://dfs.affectai.cn/affect-material/images/page20-1024/img14.png'},
+					{index: 3, name: '峰顶客栈',  url: 'https://dfs.affectai.cn/affect-material/images/page20-1024/img15.png'},
 				]
 			}
 		},
@@ -55,7 +55,7 @@
 <style lang="scss">
 	.page21-wrap {
 		min-height: 100vh;
-		// background-image: url(https://datastream.affectai.cn/callmaterial/images/page4/bg.png);
+		// background-image: url(https://dfs.affectai.cn/affect-material/images/page4/bg.png);
 		background-position: inherit;
 		background-size: cover;
 		background-repeat: no-repeat;

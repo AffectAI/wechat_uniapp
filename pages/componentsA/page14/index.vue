@@ -11,16 +11,16 @@
 			<view style="background-color: rgba(255,255,255,0.7);padding: 10px 13px;display: flex;height: 70px;border-radius: 8px;">
 				<view style="font-size: 12px;color: #434343">现在我将传授你入门版的捕鸟秘诀！总结来说就是：当新出现的小鸟与上一只完全相同时，立刻捕捉！</view>
 				<view style="width: 20px;margin-left: 5px;">
-					<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/shou-3.png" style="width: 28px;height: 28px;" mode=""></image>
-					<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/down.png" style="width: 20px;height: 10px;margin-left: 5px;" mode=""></image>
+					<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/shou-3.png" style="width: 28px;height: 28px;" mode=""></image>
+					<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/down.png" style="width: 20px;height: 10px;margin-left: 5px;" mode=""></image>
 				</view>
 			</view>
 		</view>
 		
 		<view style="">
 			<view style="display: block;text-align: center;">
-				<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/bird-2.png" style="width: 76px;height: 79px;display: block;margin: 0 auto;" mode=""></image>
-				<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
+				<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/bird-2.png" style="width: 76px;height: 79px;display: block;margin: 0 auto;" mode=""></image>
+				<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
 			</view>
 			<view style="margin-top: 15px;display: flex;justify-content: center;align-items: center;">当前只</view>
 		</view>
@@ -28,15 +28,15 @@
 		<view style="display: flex; margin-top: 42px;">
 			<view style="flex: 1;">
 				<view style="display: block;text-align: center;">
-					<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/cao.png" style="width: 110px;height: 79px;display: block;margin: 0 auto;" mode=""></image>
-					<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
+					<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/cao.png" style="width: 110px;height: 79px;display: block;margin: 0 auto;" mode=""></image>
+					<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
 				</view>
 				<view style="margin-top: 15px;display: flex;justify-content: center;align-items: center;">上一只</view>
 			</view>
 			<view style="flex: 1;">
 				<view style="display: block;text-align: center;">
-					<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/bird-2.png" style="width: 76px;height: 79px;display: block;margin: 0 auto;" mode=""></image>
-					<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
+					<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/bird-2.png" style="width: 76px;height: 79px;display: block;margin: 0 auto;" mode=""></image>
+					<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
 				</view>
 				<view style="margin-top: 15px;display: flex;justify-content: center;align-items: center;">上上一只</view>
 			</view>
@@ -55,7 +55,7 @@
 <style lang="scss">
 	.wrap14 {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page18-1022/bird-start-bg.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page18-1022/bird-start-bg.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -75,7 +75,7 @@
 			.m-a {
 				width: 110px;
 				height: 45px;
-				background-image: url(https://datastream.affectai.cn/callmaterial/images/page19-1023/m-a.png);
+				background-image: url(https://dfs.affectai.cn/affect-material/images/page19-1023/m-a.png);
 				background-position: center;
 				background-size: 100%;
 				background-repeat: no-repeat;
@@ -87,7 +87,7 @@
 			.m-b {
 				width: 110px;
 				height: 45px;
-				background-image: url(https://datastream.affectai.cn/callmaterial/images/page19-1023/m-b.png);
+				background-image: url(https://dfs.affectai.cn/affect-material/images/page19-1023/m-b.png);
 				background-position: center;
 				background-size: 100%;
 				background-repeat: no-repeat;

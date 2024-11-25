@@ -34,9 +34,9 @@
 				dataInfo: {
 					"priceShop": "",
 					"headImgs": [
-						{url: "https://datastream.affectai.cn/callmaterial/images/page20-1024/img6.png", name: '通往山涧清泉', index: 0},
-						{url: "https://datastream.affectai.cn/callmaterial/images/page20-1024/img7.png", name: '通往古老松林', index: 1},
-						{url: "https://datastream.affectai.cn/callmaterial/images/page20-1024/img8.png", name: '通往高山草甸', index: 2},
+						{url: "https://dfs.affectai.cn/affect-material/images/page20-1024/img6.png", name: '通往山涧清泉', index: 0},
+						{url: "https://dfs.affectai.cn/affect-material/images/page20-1024/img7.png", name: '通往古老松林', index: 1},
+						{url: "https://dfs.affectai.cn/affect-material/images/page20-1024/img8.png", name: '通往高山草甸', index: 2},
 					],
 					// "goodsName": "巴黎香奈儿沙龙香水50ml",
 					// "goodsPrice": "¥999.0",
@@ -67,7 +67,7 @@
 	}
 	.page18-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img5.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img5.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -86,7 +86,7 @@
 		padding: 0 10px;
 	}
 	.item1 {
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img6.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img6.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -94,7 +94,7 @@
 		background-color: beige;
 	}
 	.item2 {
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img7.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img7.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -102,7 +102,7 @@
 		background-color: beige;
 	}
 	.item3 {
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img8.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img8.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

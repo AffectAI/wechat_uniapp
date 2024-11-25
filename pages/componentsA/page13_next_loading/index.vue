@@ -57,7 +57,7 @@
 <style lang="scss">
 	.page12 {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page18-1022/bird-start-bg.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page18-1022/bird-start-bg.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -66,7 +66,7 @@
 		
 		.tit {
 			height: 180px;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page19-1023/tit5.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page19-1023/tit5.png);
 			background-position: center;
 			background-size: contain;
 			background-repeat: no-repeat;

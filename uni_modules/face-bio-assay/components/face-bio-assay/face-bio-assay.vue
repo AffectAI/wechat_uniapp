@@ -3,7 +3,7 @@
 		<!-- 心湖倒影 -->
 		<view style="color: #000;font-size: 20px;text-align: center;margin-bottom: 25px;padding-top: 80px;">心湖倒影</view>
 		<view class="tips" v-if="!isSuccess"> 
-			<u-image src="https://datastream.affectai.cn/callmaterial/images/page5/icon1.png" width="12px" height="11px" style="margin-right: 4px;"></u-image> 
+			<u-image src="https://dfs.affectai.cn/affect-material/images/page5/icon1.png" width="12px" height="11px" style="margin-right: 4px;"></u-image> 
 			{{ tipsText }}
 		</view>
 		<view class="tips successTips" v-if="isSuccess && isClick">
@@ -13,7 +13,7 @@
 		<view v-show="!isSuccess" class="start" @click="chooseVideo">开始拍摄</view>
 		<view v-show="isSuccess" class="start" @click="nextPage">开始拍摄</view>
 		
-		<view  style="position: relative;width: 317px;height: 350px;margin: 25px auto 0 auto;background-image: url(https://datastream.affectai.cn/callmaterial/images/page5/icon4.png);background-position: center;background-repeat: no-repeat;background-size: 100%;">
+		<view  style="position: relative;width: 317px;height: 350px;margin: 25px auto 0 auto;background-image: url(https://dfs.affectai.cn/affect-material/images/page5/icon4.png);background-position: center;background-repeat: no-repeat;background-size: 100%;">
 			<view 
 				class="camera-cover">
 				<camera class="camera" v-if="cameraShow" mode="normal"  flash="off" device-position="front" resolution="high" @stop="stop" @error="error"
@@ -38,7 +38,7 @@
 							<!-- <cover-view class="detectInfo">{{ isSuccess ? '人脸检测成功' : tipsText}}</cover-view> -->
 						</cover-view>
 						<!-- <cover-view class="camera">
-							<cover-image class="camera" src="https://datastream.affectai.cn/callmaterial/images/page5/icon4.png"></cover-image>
+							<cover-image class="camera" src="https://dfs.affectai.cn/affect-material/images/page5/icon4.png"></cover-image>
 						</cover-view>
 						<cover-view class="cover-bottom cover-item"></cover-view> -->
 					</cover-view>
@@ -370,7 +370,7 @@
 <style lang="scss" scoped>
 	.page1-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page5/bg.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page5/bg.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

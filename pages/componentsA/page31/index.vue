@@ -65,16 +65,16 @@
 						></typewriter>
 					</view>
 				</view>
-				<view style="width: 22px;display: flex;align-items: flex-end;background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+				<view style="width: 22px;display: flex;align-items: flex-end;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
 					<u-image
 						
 						width="80px" 
 						height="25px" 
 						@click="nextAsk"
 						style="width: 80px;height: 25px;border-radius: 5px;position: absolute;bottom: 5px;right: 5px;"
-						src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img28.png">
+						src="https://dfs.affectai.cn/affect-material/images/page20-1024/img28.png">
 					</u-image>
-					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://datastream.affectai.cn/callmaterial/images/page3/down.png"></u-image> -->
+					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
 		</view>
@@ -123,24 +123,24 @@
 				if(this.index >= 6) return; 
 				this.index += 1;
 				if(this.index == 6) {
-					this.innerAudioContext.src = 'https://datastream.affectai.cn/callmaterial/images/audio/share_questions/a10.mp3';
+					this.innerAudioContext.src = 'https://dfs.affectai.cn/affect-material/images/audio/share_questions/a10.mp3';
 					this.innerAudioContext.play();
 				}
 			
 				if(this.index == 2) {
-					this.innerAudioContext.src = 'https://datastream.affectai.cn/callmaterial/images/audio/share_questions/a6.mp3';
+					this.innerAudioContext.src = 'https://dfs.affectai.cn/affect-material/images/audio/share_questions/a6.mp3';
 					this.innerAudioContext.play();
 				}
 				if(this.index == 3) {
-					this.innerAudioContext.src = 'https://datastream.affectai.cn/callmaterial/images/audio/share_questions/a7.mp3';
+					this.innerAudioContext.src = 'https://dfs.affectai.cn/affect-material/images/audio/share_questions/a7.mp3';
 					this.innerAudioContext.play();
 				}
 				if(this.index == 4) {
-					this.innerAudioContext.src = 'https://datastream.affectai.cn/callmaterial/images/audio/share_questions/a8.mp3';
+					this.innerAudioContext.src = 'https://dfs.affectai.cn/affect-material/images/audio/share_questions/a8.mp3';
 					this.innerAudioContext.play();
 				}
 				if(this.index == 5) {
-					this.innerAudioContext.src = 'https://datastream.affectai.cn/callmaterial/images/audio/share_questions/a9.mp3';
+					this.innerAudioContext.src = 'https://dfs.affectai.cn/affect-material/images/audio/share_questions/a9.mp3';
 					this.innerAudioContext.play();
 				}
 				
@@ -173,7 +173,7 @@
 <style lang="scss">
 	.page31-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page22/img4.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page22/img4.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -188,8 +188,8 @@
 		.img1 {
 			width: 180px;
 			height: 85px;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page25/page25/img1.png);
-			// background-image: url(https://datastream.affectai.cn/callmaterial/images/flight/img53.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page25/page25/img1.png);
+			// background-image: url(https://dfs.affectai.cn/affect-material/images/flight/img53.png);
 			
 			position: absolute;
 			top: 20px;
@@ -198,7 +198,7 @@
 		.img2 {
 			width: 180px;
 			height: 85px;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page25/page25/img2.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page25/page25/img2.png);
 			position: absolute;
 			top: 20px;
 			right: 10px;
@@ -208,7 +208,7 @@
 			height: 85px;
 			top: 250px;
 			left: 10px;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page25/page25/img3.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page25/page25/img3.png);
 
 		}
 		.img4 {
@@ -217,7 +217,7 @@
 			margin: 0 10px;
 			top: 227px;
 			right: 0;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page25/page25/img4.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page25/page25/img4.png);
 
 		}
 		.img5 {
@@ -225,7 +225,7 @@
 			height: 85px;
 			top: 133px;
 			left: 83px;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page25/page25/img5.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page25/page25/img5.png);
 	
 		}
 		

@@ -57,7 +57,7 @@
 			@detectFailed="detectFailed" >
 		</face-bio-assay-glo>
 		<view class="tips" :class="[isSuccess ? '' : 'errorTips']" v-if="(pageIndex >= 7 && tipsText && !isSuccess && pageIndex != 35) || (pageIndex == 'page24_2' || pageIndex == 'page24_1' || pageIndex == 'page13_upgrade' || pageIndex == 'pageIndex' || pageIndex == 'page13_next_loading' || pageIndex == 'page13_next_desc')">
-			<!-- <u-image src="https://datastream.affectai.cn/callmaterial/images/page5/icon1.png" width="12px" height="11px" style="margin-right: 4px;"></u-image> -->
+			<!-- <u-image src="https://dfs.affectai.cn/affect-material/images/page5/icon1.png" width="12px" height="11px" style="margin-right: 4px;"></u-image> -->
 			{{tipsText}}
 		</view>
 		
@@ -225,7 +225,7 @@
 			  obeyMuteSwitch: false,
 			  loop: true
 			});
-			this.innerAudioContext.src = 'https://datastream.affectai.cn/callmaterial/images/audio/bgm/a1.mp3';
+			this.innerAudioContext.src = 'https://dfs.affectai.cn/affect-material/images/audio/bgm/a1.mp3';
 			
 			// 鼠标音频
 			this.innerAudioContextMouse = uni.createInnerAudioContext({
@@ -233,7 +233,7 @@
 			  obeyMuteSwitch: false,
 			});
 			// 鼠标音效
-			this.innerAudioContextMouse.src = 'https://datastream.affectai.cn/callmaterial/images/audio/mouse_sound/a2.mp3';
+			this.innerAudioContextMouse.src = 'https://dfs.affectai.cn/affect-material/images/audio/mouse_sound/a2.mp3';
 			
 			// TODO  雷达图 没数据；全程视频问题；所有数据上传；
 		},
@@ -355,7 +355,7 @@
 					  obeyMuteSwitch: false,
 					  loop: true
 					});
-					this.innerAudioContextBird_a.src = 'https://datastream.affectai.cn/callmaterial/images/audio/bgm/a2.mp3';
+					this.innerAudioContextBird_a.src = 'https://dfs.affectai.cn/affect-material/images/audio/bgm/a2.mp3';
 					this.innerAudioContextBird_a.play();
 				}
 				if(pageIndex == 13) {
@@ -395,7 +395,7 @@
 					  obeyMuteSwitch: false,
 					  loop: true
 					});
-					this.innerAudioContext_lt.src = 'https://datastream.affectai.cn/callmaterial/images/audio/bgm/a3.mp3';
+					this.innerAudioContext_lt.src = 'https://dfs.affectai.cn/affect-material/images/audio/bgm/a3.mp3';
 					this.innerAudioContext_lt.play();
 				}
 				if(pageIndex == 19) {
@@ -431,7 +431,7 @@
 					  obeyMuteSwitch: false,
 					  loop: true
 					});
-					this.innerAudioContext_24.src = 'https://datastream.affectai.cn/callmaterial/images/audio/bgm/a5.mp3';
+					this.innerAudioContext_24.src = 'https://dfs.affectai.cn/affect-material/images/audio/bgm/a5.mp3';
 					this.innerAudioContext_24.play();
 				}
 				if(pageIndex == 25) {
@@ -453,7 +453,7 @@
 					  obeyMuteSwitch: false,
 					  loop: true
 					});
-					this.innerAudioContext_27.src = 'https://datastream.affectai.cn/callmaterial/images/audio/bgm/a4.mp3';
+					this.innerAudioContext_27.src = 'https://dfs.affectai.cn/affect-material/images/audio/bgm/a4.mp3';
 					this.innerAudioContext_27.play();
 				}
 				if(pageIndex == 28) {
@@ -472,7 +472,7 @@
 					  obeyMuteSwitch: false,
 					  loop: true
 					});
-					this.innerAudioContext_29.src = 'https://datastream.affectai.cn/callmaterial/images/audio/bgm/a6.mp3';
+					this.innerAudioContext_29.src = 'https://dfs.affectai.cn/affect-material/images/audio/bgm/a6.mp3';
 					this.innerAudioContext_29.play();
 				}
 				if(pageIndex == 30) {
@@ -522,7 +522,7 @@
 					  obeyMuteSwitch: false,
 					  loop: true
 					});
-					this.innerAudioContext_35.src = 'https://datastream.affectai.cn/callmaterial/images/audio/bgm/end.mp3';
+					this.innerAudioContext_35.src = 'https://dfs.affectai.cn/affect-material/images/audio/bgm/end.mp3';
 					this.innerAudioContext_35.play();
 					var that = this;
 					this.innerAudioContext_35.onEnded(function() {
@@ -784,7 +784,7 @@
 		.m-a {
 			width: 110px;
 			height: 45px;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page19-1023/m-a.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page19-1023/m-a.png);
 			background-position: center;
 			background-size: 100px;
 			background-repeat: no-repeat;
@@ -796,7 +796,7 @@
 		.m-b {
 			width: 110px;
 			height: 45px;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page19-1023/m-b.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page19-1023/m-b.png);
 			background-position: center;
 			background-size: 100px;
 			background-repeat: no-repeat;

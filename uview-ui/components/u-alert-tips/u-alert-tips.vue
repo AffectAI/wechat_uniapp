@@ -19,7 +19,7 @@
 			</view>
 		</view>
 		<view class="u-icon-wrap">
-			<u-icon @click="close" v-if="closeAble && !closeText" hoverClass="u-type-error-hover-color" name="close" color="#c0c4cc"
+			<u-icon @click="close" v-if="closeAble && !closeText" hoverClass="u-type-error-hover-color" name="close" color="'#c0c4cc'"
 			 :size="22" class="u-close-icon" :style="{
 				top: description ? '18rpx' : '24rpx'
 			}"></u-icon>

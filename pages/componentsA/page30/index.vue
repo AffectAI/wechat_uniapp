@@ -1,9 +1,9 @@
 <template>
 	<view class="page30-wrap">
 		<!-- 开始游戏按钮 -->
-		<u-image @click="startGame" v-if="isStart" width="160px" height="50px" class="startBtn" src="https://datastream.affectai.cn/callmaterial/images/page23/img12.png"></u-image>
+		<u-image @click="startGame" v-if="isStart" width="160px" height="50px" class="startBtn" src="https://dfs.affectai.cn/affect-material/images/page23/img12.png"></u-image>
 		<!-- 退出游戏 --> 
-		<u-image @click="overGame" v-if="isOver" width="160px" height="50px" class="startBtn" src="https://datastream.affectai.cn/callmaterial/images/page23/img3.png"></u-image>
+		<u-image @click="overGame" v-if="isOver" width="160px" height="50px" class="startBtn" src="https://dfs.affectai.cn/affect-material/images/page23/img3.png"></u-image>
 		
 		<!-- translatex：{{translatex}},bridBottom:{{bridBottom}},{{inFlight}}，volumeSize：{{volumeSize}} -->
 		<!-- 飞行的小鸟 -->
@@ -27,8 +27,8 @@
 			</view>
 			
 			<!-- 两片云朵 -->
-			<u-image src="https://datastream.affectai.cn/callmaterial/images/page23/img8.png" width="225px" height="55px" style="width: 225px;height: 55px; position: absolute;top: 20px;left: 40px;"></u-image>
-			<u-image src="https://datastream.affectai.cn/callmaterial/images/page23/img9.png" width="225px" height="55px" style="width: 225px;height: 55px; position: absolute;top: 20px;left: 400px;"></u-image>
+			<u-image src="https://dfs.affectai.cn/affect-material/images/page23/img8.png" width="225px" height="55px" style="width: 225px;height: 55px; position: absolute;top: 20px;left: 40px;"></u-image>
+			<u-image src="https://dfs.affectai.cn/affect-material/images/page23/img9.png" width="225px" height="55px" style="width: 225px;height: 55px; position: absolute;top: 20px;left: 400px;"></u-image>
 		</view>
 		
 		<u-toast ref="uToast" />
@@ -77,7 +77,7 @@
 			  obeyMuteSwitch: false,
 			  loop: true
 			});
-			this.innerAudioContext.src = 'https://datastream.affectai.cn/callmaterial/images/audio/a4.mp3';
+			this.innerAudioContext.src = 'https://dfs.affectai.cn/affect-material/images/audio/a4.mp3';
 			
 		},
 		beforeDestroy() {
@@ -458,7 +458,7 @@
 		.brid {
 			width: 120px;
 			height: 100px;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page23/brid.gif);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page23/brid.gif);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -471,7 +471,7 @@
 		.outBrid {
 			width: 120px;
 			height: 100px;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page23/img19.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page23/img19.png);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -485,7 +485,7 @@
 		.scene {
 			width: 1000vw;
 			height: 100vh;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page23/img1.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page23/img1.png);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -499,7 +499,7 @@
 				right: 0;
 				width: 1000vw;
 				height: 90px;
-				background-image: url(https://datastream.affectai.cn/callmaterial/images/page23/img10.png);
+				background-image: url(https://dfs.affectai.cn/affect-material/images/page23/img10.png);
 				background-position: center;
 				background-repeat: repeat-x;
 				background-size: contain;
@@ -510,7 +510,7 @@
 				left: 300px;
 				width: 230px;
 				height: 349px;
-				background-image: url(https://datastream.affectai.cn/callmaterial/images/page23/img1-1.png);
+				background-image: url(https://dfs.affectai.cn/affect-material/images/page23/img1-1.png);
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -521,7 +521,7 @@
 				left: 700px;
 				width: 232px;
 				height: 335px;
-				background-image: url(https://datastream.affectai.cn/callmaterial/images/page23/img1-2.png);
+				background-image: url(https://dfs.affectai.cn/affect-material/images/page23/img1-2.png);
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -532,7 +532,7 @@
 				left: 1160px;
 				width: 373px;
 				height: 460px;
-				background-image: url(https://datastream.affectai.cn/callmaterial/images/page23/img1-3.png);
+				background-image: url(https://dfs.affectai.cn/affect-material/images/page23/img1-3.png);
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -543,7 +543,7 @@
 				left: 1800px;
 				width: 385px;
 				height: 490px;
-				background-image: url(https://datastream.affectai.cn/callmaterial/images/page23/img1-4.png);
+				background-image: url(https://dfs.affectai.cn/affect-material/images/page23/img1-4.png);
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -554,7 +554,7 @@
 				left: 2500px;
 				width: 349px;
 				height: 555px;
-				background-image: url(https://datastream.affectai.cn/callmaterial/images/page23/img1-5.png);
+				background-image: url(https://dfs.affectai.cn/affect-material/images/page23/img1-5.png);
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;

@@ -4,8 +4,8 @@
 		<view class="img1" v-if="index == 2"></view>
 		<view class="img2" v-if="index == 2">
 			<view style="display: flex;width: 220px;margin: 0 auto;">
-				<u-image width="100px" height="45px" border-radius="5px" style="width: 100px;height: 45px;margin-right: 10px;border-radius: 5px" src="https://datastream.affectai.cn/callmaterial/images/page22/img6.png"></u-image>
-				<u-image @click="next3" width="100px" height="45px" border-radius="5px" style="width: 100px;height: 45px;margin-left: 10px;border-radius: 5px" src="https://datastream.affectai.cn/callmaterial/images/page22/img7.png"></u-image>
+				<u-image width="100px" height="45px" border-radius="5px" style="width: 100px;height: 45px;margin-right: 10px;border-radius: 5px" src="https://dfs.affectai.cn/affect-material/images/page22/img6.png"></u-image>
+				<u-image @click="next3" width="100px" height="45px" border-radius="5px" style="width: 100px;height: 45px;margin-left: 10px;border-radius: 5px" src="https://dfs.affectai.cn/affect-material/images/page22/img7.png"></u-image>
 			</view>
 		</view>
 		
@@ -31,8 +31,8 @@
 					></typewriter>
 					
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
-					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://datastream.affectai.cn/callmaterial/images/page3/down.png"></u-image> -->
+				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
 		</view>
@@ -69,7 +69,7 @@
 <style lang="scss">
 	.page29-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page22/img4.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page22/img4.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -79,8 +79,8 @@
 			width: 98%;
 			height: 220px;
 			margin: 0 auto;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page22/img5.png);
-			// background-image: url(https://datastream.affectai.cn/callmaterial/images/flight/img53.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page22/img5.png);
+			// background-image: url(https://dfs.affectai.cn/affect-material/images/flight/img53.png);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -92,7 +92,7 @@
 			margin: 0 auto;
 			display: flex;
 			align-items: flex-end;
-			// background-image: url(https://datastream.affectai.cn/callmaterial/images/page22/img3.png);
+			// background-image: url(https://dfs.affectai.cn/affect-material/images/page22/img3.png);
 			// background-position: center;
 			// background-size: 100%;
 			// background-repeat: no-repeat;

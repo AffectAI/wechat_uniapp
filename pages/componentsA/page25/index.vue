@@ -5,7 +5,7 @@
 			width="100%" 
 			height="240px"
 			style="width: 100%;height: 240px;position: absolute;top: 200px;left: 0;right: 0;margin: auto;z-index: 300;" 
-			src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img46.png"></u-image>
+			src="https://dfs.affectai.cn/affect-material/images/page20-1024/img46.png"></u-image>
 	
 		<!-- 心湖 旅行伙伴2 -->
 		<view class="dialogue">
@@ -20,7 +20,7 @@
 					height="25px" 
 					@click="addIndex"
 					style="width: 80px;height: 25px;border-radius: 5px;position: absolute;bottom: 5px;right: 5px;"
-					src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img28.png">
+					src="https://dfs.affectai.cn/affect-material/images/page20-1024/img28.png">
 				</u-image>
 			</view>
 			<view class="center" style="height: 200px;">
@@ -125,11 +125,11 @@
 			  useWebAudioImplement: false,
 			  obeyMuteSwitch: false,
 			});
-			this.innerAudioContext_1.src = 'https://datastream.affectai.cn/callmaterial/images/audio/share_questions/a1.mp3';
-			this.innerAudioContext_2.src = 'https://datastream.affectai.cn/callmaterial/images/audio/share_questions/a2.mp3';
-			this.innerAudioContext_3.src = 'https://datastream.affectai.cn/callmaterial/images/audio/share_questions/a3.mp3';
-			this.innerAudioContext_4.src = 'https://datastream.affectai.cn/callmaterial/images/audio/share_questions/a4.mp3';
-			this.innerAudioContext_5.src = 'https://datastream.affectai.cn/callmaterial/images/audio/share_questions/a5.mp3';
+			this.innerAudioContext_1.src = 'https://dfs.affectai.cn/affect-material/images/audio/share_questions/a1.mp3';
+			this.innerAudioContext_2.src = 'https://dfs.affectai.cn/affect-material/images/audio/share_questions/a2.mp3';
+			this.innerAudioContext_3.src = 'https://dfs.affectai.cn/affect-material/images/audio/share_questions/a3.mp3';
+			this.innerAudioContext_4.src = 'https://dfs.affectai.cn/affect-material/images/audio/share_questions/a4.mp3';
+			this.innerAudioContext_5.src = 'https://dfs.affectai.cn/affect-material/images/audio/share_questions/a5.mp3';
 		},
 		mounted() {
 			
@@ -200,7 +200,7 @@
 <style lang="scss">
 	.page25-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img35.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img35.png);
 		background-position: inherit;
 		background-size: cover;
 		background-repeat: no-repeat;

@@ -22,7 +22,7 @@
 						
 					></typewriter>
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
 				</view>
 			</view>
 		</view>
@@ -58,8 +58,8 @@
 <style lang="scss">
 	.page1-wrap {
 		min-height: 100vh;
-		// background-image: url(https://datastream.affectai.cn/callmaterial/images/page4/bg.png);
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page18-1022/lieren.png);
+		// background-image: url(https://dfs.affectai.cn/affect-material/images/page4/bg.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page18-1022/lieren.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

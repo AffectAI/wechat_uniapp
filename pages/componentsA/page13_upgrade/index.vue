@@ -118,8 +118,8 @@
 				v-if="dialogueIndex == 13 || (dialogueIndex <= 11 && (dialogueIndex != 6 && dialogueIndex != 9 ))" 
 				@click="bindAnimat"
 				style="width: 20px;margin-left: 5px;">
-					<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/shou-3.png" @click="bindAnimat" class="bouncy" style="width: 17px;height: 17px;margin-left: 5px;" mode=""></image>
-					<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/down.png" style="width: 17px;height: 8px;margin-left: 5px;" mode=""></image>
+					<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/shou-3.png" @click="bindAnimat" class="bouncy" style="width: 17px;height: 17px;margin-left: 5px;" mode=""></image>
+					<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/down.png" style="width: 17px;height: 8px;margin-left: 5px;" mode=""></image>
 				</view>
 			</view>
 		</view>
@@ -129,15 +129,15 @@
 				<view style="flex: 1;position: relative;">
 					<view style="display: block;text-align: center;min-height: 104px;">
 						<image :src="birdList[randNuma-1].url" style="width: 76px;height: 79px;display: block;margin: 0 auto;" mode=""></image>
-						<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
+						<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
 					</view>
 					<image v-if="is_success" 
 					class="currentBird" 
-					src="https://datastream.affectai.cn/callmaterial/images/page19-1023/tit-1.png" style="width: 150px;height: 90px;" mode=""></image>
+					src="https://dfs.affectai.cn/affect-material/images/page19-1023/tit-1.png" style="width: 150px;height: 90px;" mode=""></image>
 					<image 
 					v-if="is_error" 
 					class="currentBird" 
-					src="https://datastream.affectai.cn/callmaterial/images/page19-1023/tit-2.png" style="width: 150px;height: 90px;" mode=""></image>
+					src="https://dfs.affectai.cn/affect-material/images/page19-1023/tit-2.png" style="width: 150px;height: 90px;" mode=""></image>
 						
 					<view style="margin-top: 15px;display: flex;justify-content: center;align-items: center;">当前鸟</view>
 				</view>
@@ -147,13 +147,13 @@
 						<!-- <image 
 							v-if="dialogueIndex == 13" 
 							class="currentBird" 
-							src="https://datastream.affectai.cn/callmaterial/images/page19-1023/cao-fail.png"
+							src="https://dfs.affectai.cn/affect-material/images/page19-1023/cao-fail.png"
 							 style="width: 139px;height: 90px;top: -15px;left: -8px;" mode=""></image> -->
 						
 						<image 
 						v-if="(dialogueIndex == 13 || dialogueIndex == 7 || dialogueIndex == 6 || dialogueIndex == 10 ||  dialogueIndex == 11) && !isError" 
 						class="cao" 
-						src="https://datastream.affectai.cn/callmaterial/images/page19-1023/cao.png" 
+						src="https://dfs.affectai.cn/affect-material/images/page19-1023/cao.png" 
 						style="position: absolute;z-index: 500" mode=""></image>
 						
 						<image 
@@ -161,11 +161,11 @@
 						( dialogueIndex == 8 || dialogueIndex == 9  || dialogueIndex == 12)
 						 && !isError" 
 						class="cao cao-2" 
-						src="https://datastream.affectai.cn/callmaterial/images/page19-1023/cao-2.png" 
+						src="https://dfs.affectai.cn/affect-material/images/page19-1023/cao-2.png" 
 						style="position: absolute;z-index: 500" mode=""></image>
 						
 						<image :src="birdList[randNumb-1].url" style="width: 65px;height: 65px;margin: 0 38px 28px auto;display: block;" mode=""></image>
-						<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>				
+						<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>				
 					</view>
 					<view style="margin-top: 15px;display: flex;justify-content: center;align-items: center;">上一只</view>
 				</view>
@@ -174,17 +174,17 @@
 						<image
 						v-if="(dialogueIndex == 7 || dialogueIndex == 10 || dialogueIndex == 11) && !isError" 
 						class="cao cao2" 
-						src="https://datastream.affectai.cn/callmaterial/images/page19-1023/cao.png" 
+						src="https://dfs.affectai.cn/affect-material/images/page19-1023/cao.png" 
 						style="position: absolute;z-index: 500" mode=""></image>
 						
 						<image 
 						v-if="dialogueIndex == 8 || dialogueIndex == 13 || dialogueIndex == 9  || dialogueIndex == 12" 
 						class="cao cao-2" 
-						src="https://datastream.affectai.cn/callmaterial/images/page19-1023/cao-2.png" 
+						src="https://dfs.affectai.cn/affect-material/images/page19-1023/cao-2.png" 
 						style="position: absolute;z-index: 500" mode=""></image>
 						
 						<image :src="birdList[randNumc-1].url" style="width: 65px;height: 65px;margin: 0 38px 28px auto;display: block;" mode=""></image>
-						<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>				
+						<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>				
 					</view>
 					<view style="margin-top: 15px;display: flex;justify-content: center;align-items: center;">上上一只</view>
 				</view>
@@ -201,7 +201,7 @@
 				<image
 				 v-if="dialogueIndex == 12"
 				 class="opactyAnimly"
-				 src="https://datastream.affectai.cn/callmaterial/images/page19-1023/shou-2.png"
+				 src="https://dfs.affectai.cn/affect-material/images/page19-1023/shou-2.png"
 				  style="width: 80px;height: 80px;display: block;margin: 15px auto 0 auto;position: absolute;top: 25px;left: 15px;right: auto;" mode=""></image>
 				  
 				</view>
@@ -216,7 +216,7 @@
 				 	"
 				 	class="opactyAnimly"
 				 	
-				 	src="https://datastream.affectai.cn/callmaterial/images/page19-1023/shou-2.png" 
+				 	src="https://dfs.affectai.cn/affect-material/images/page19-1023/shou-2.png" 
 				 	style="width: 80px;height: 80px;display: block;margin: 15px auto 0 auto;position: absolute;top: 25px;left: auto;right: 0;" mode=""></image>
 				 </view>
 			</view>
@@ -263,8 +263,8 @@
 						</view>
 					</view>
 					<!-- <view style="width: 20px;margin-left: 5px;">
-						<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/shou-3.png" style="width: 17px;height: 17px;margin-left: 5px;" mode=""></image>
-						<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/down.png" style="width: 17px;height: 8px;margin-left: 5px;" mode=""></image>
+						<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/shou-3.png" style="width: 17px;height: 17px;margin-left: 5px;" mode=""></image>
+						<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/down.png" style="width: 17px;height: 8px;margin-left: 5px;" mode=""></image>
 					</view> -->
 				</view>
 			</view>
@@ -273,10 +273,10 @@
 				<view style="flex: 1;position: relative;">
 					<view style="display: block;text-align: center;min-height: 104px;">
 						<image :src="birdList[randNuma-1].url" style="width: 65px;height: 65px;margin: 0 38px 28px auto;display: block;" mode=""></image>
-						<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
+						<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
 					</view>
-					<image v-if="b_success" class="currentBird" src="https://datastream.affectai.cn/callmaterial/images/page19-1023/tit-1.png" style="width: 150px;height: 90px;" mode=""></image>
-					<image v-if="b_error" class="currentBird" src="https://datastream.affectai.cn/callmaterial/images/page19-1023/tit-2.png" style="width: 150px;height: 90px;" mode=""></image>
+					<image v-if="b_success" class="currentBird" src="https://dfs.affectai.cn/affect-material/images/page19-1023/tit-1.png" style="width: 150px;height: 90px;" mode=""></image>
+					<image v-if="b_error" class="currentBird" src="https://dfs.affectai.cn/affect-material/images/page19-1023/tit-2.png" style="width: 150px;height: 90px;" mode=""></image>
 						
 					<!-- <view style="margin-top: 15px;display: flex;justify-content: center;align-items: center;">当前鸟{{dialogueIndex_b}}</view> -->
 					<view style="margin-top: 15px;display: flex;justify-content: center;align-items: center;">当前鸟</view>
@@ -288,11 +288,11 @@
 					<image
 						v-if="dialogueIndex_b > 1"
 						class="cao cao2"
-						src="https://datastream.affectai.cn/callmaterial/images/page19-1023/cao.png" style="position: absolute;z-index: 500" mode=""></image>
+						src="https://dfs.affectai.cn/affect-material/images/page19-1023/cao.png" style="position: absolute;z-index: 500" mode=""></image>
 						
 					<view style="display: block;text-align: center;min-height: 104px;">
 						<image :src="birdList[randNumb-1].url" style="width: 65px;height: 65px;margin: 0 38px 28px auto;display: block;" mode=""></image>
-						<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
+						<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
 					</view>
 					
 					<!-- <view style="margin-top: 15px;display: flex;justify-content: center;align-items: center;">上一只{{randNumb}}</view> -->
@@ -303,13 +303,13 @@
 					<image
 						v-if="caoFail" 
 						class="currentBird" 
-						src="https://datastream.affectai.cn/callmaterial/images/page19-1023/cao-fail.png"
+						src="https://dfs.affectai.cn/affect-material/images/page19-1023/cao-fail.png"
 						style="width: 139px;height: 90px;top: -15px;left: -8px;" mode=""></image>
 					
 					<image
 						v-if="caoFlag"
 						 class="cao cao2"
-						 src="https://datastream.affectai.cn/callmaterial/images/page19-1023/cao.png" 
+						 src="https://dfs.affectai.cn/affect-material/images/page19-1023/cao.png" 
 						 style="position: absolute;z-index: 500;left: -2px !important;" mode=""></image>
 									
 					<image
@@ -317,12 +317,12 @@
 						(b_success || successTime == 3)
 						 && !caoFail" 
 						class="cao" 
-						src="https://datastream.affectai.cn/callmaterial/images/page19-1023/cao-2.png" 
+						src="https://dfs.affectai.cn/affect-material/images/page19-1023/cao-2.png" 
 						style="position: absolute;z-index: 500" mode=""></image>
 						
 					<view style="display: block;text-align: center;min-height: 104px;">
 						<image :src="birdList[randNumc-1].url" style="width: 66px;height: 75px;display: block;margin: 0 auto 19px 35px;" mode=""></image>
-						<image src="https://datastream.affectai.cn/callmaterial/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
+						<image src="https://dfs.affectai.cn/affect-material/images/page19-1023/img-1.png" style="width: 76px;height: 10px;display: block;margin: 15px auto 0 auto;" mode=""></image>
 					</view>
 					
 					<!-- <view style="margin-top: 15px;display: flex;justify-content: center;align-items: center;">上上一只{{randNumc}}</view> -->
@@ -396,11 +396,11 @@
 				randNumb: 0, // 上一只
 				randNumc: 0, // 上上只
 				birdList: [
-					{index: 1, name: 'bird-1', url: 'https://datastream.affectai.cn/callmaterial/images/page19-1023/bird-1.png'},
-					{index: 2, name: 'bird-2', url: 'https://datastream.affectai.cn/callmaterial/images/page19-1023/bird-2.png'},
-					{index: 3, name: 'bird-3', url: 'https://datastream.affectai.cn/callmaterial/images/page19-1023/bird-3.png'},
-					{index: 4, name: 'bird-4', url: 'https://datastream.affectai.cn/callmaterial/images/page19-1023/bird-4.png'},
-					{index: 5, name: 'bird-5', url: 'https://datastream.affectai.cn/callmaterial/images/page19-1023/bird-5.png'},
+					{index: 1, name: 'bird-1', url: 'https://dfs.affectai.cn/affect-material/images/page19-1023/bird-1.png'},
+					{index: 2, name: 'bird-2', url: 'https://dfs.affectai.cn/affect-material/images/page19-1023/bird-2.png'},
+					{index: 3, name: 'bird-3', url: 'https://dfs.affectai.cn/affect-material/images/page19-1023/bird-3.png'},
+					{index: 4, name: 'bird-4', url: 'https://dfs.affectai.cn/affect-material/images/page19-1023/bird-4.png'},
+					{index: 5, name: 'bird-5', url: 'https://dfs.affectai.cn/affect-material/images/page19-1023/bird-5.png'},
 					
 				],
 				clickTime: 0,
@@ -427,16 +427,16 @@
 			  obeyMuteSwitch: false,
 			});
 			// 捕获成功音效
-			this.innerAudioContext_success.src = 'https://datastream.affectai.cn/callmaterial/images/audio/a1.mp3';
+			this.innerAudioContext_success.src = 'https://dfs.affectai.cn/affect-material/images/audio/a1.mp3';
 			// 捕获失败音效
-			this.innerAudioContext_fail.src = 'https://datastream.affectai.cn/callmaterial/images/audio/a2.mp3';
+			this.innerAudioContext_fail.src = 'https://dfs.affectai.cn/affect-material/images/audio/a2.mp3';
 			
 			// 下一步音频
 			this.innerAudioContext_n = uni.createInnerAudioContext({
 			  useWebAudioImplement: false,
 			  obeyMuteSwitch: false,
 			});
-			this.innerAudioContext_n.src = 'https://datastream.affectai.cn/callmaterial/images/audio/a3.mp3';
+			this.innerAudioContext_n.src = 'https://dfs.affectai.cn/affect-material/images/audio/a3.mp3';
 			
 		},
 		beforeDestroy() {
@@ -679,7 +679,7 @@
 <style lang="scss">
 	.wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page18-1022/bird-start-bg.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page18-1022/bird-start-bg.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -699,7 +699,7 @@
 			.m-a {
 				width: 110px;
 				height: 45px;
-				background-image: url(https://datastream.affectai.cn/callmaterial/images/page19-1023/m-a.png);
+				background-image: url(https://dfs.affectai.cn/affect-material/images/page19-1023/m-a.png);
 				background-position: center;
 				background-size: 100%;
 				background-repeat: no-repeat;
@@ -711,7 +711,7 @@
 			.m-b {
 				width: 110px;
 				height: 45px;
-				background-image: url(https://datastream.affectai.cn/callmaterial/images/page19-1023/m-b.png);
+				background-image: url(https://dfs.affectai.cn/affect-material/images/page19-1023/m-b.png);
 				background-position: center;
 				background-size: 100%;
 				background-repeat: no-repeat;

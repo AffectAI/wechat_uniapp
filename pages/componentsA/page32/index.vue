@@ -53,7 +53,7 @@
 	
 		<view class="processWrap">
 			<view class="timeIcon">
-				<u-image width="25px" height="25px" style="width: 25px;height: 25px;" src="https://datastream.affectai.cn/callmaterial/images/page21/clock.png"></u-image>
+				<u-image width="25px" height="25px" style="width: 25px;height: 25px;" src="https://dfs.affectai.cn/affect-material/images/page21/clock.png"></u-image>
 			</view>
 			<view class="process">
 				<view class="processing" :style="{width: proWdith + '%'}"></view>
@@ -188,8 +188,8 @@
 	}
 	.page32-wrap {
 		min-height: 100vh;
-		// background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/flight/img25.png);
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img31.png);
+		// background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/flight/img25.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img31.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -207,7 +207,7 @@
 		background-color: #ecef3891;
 		border-radius: 10px;
 		// border: 2px solid rgb(99,79,87);
-		// background-image: url(https://datastream.affectai.cn/callmaterial/images/page21/img2.jpg);
+		// background-image: url(https://dfs.affectai.cn/affect-material/images/page21/img2.jpg);
 		background-position: center;
 		background-size: 122%;
 		background-repeat: no-repeat;

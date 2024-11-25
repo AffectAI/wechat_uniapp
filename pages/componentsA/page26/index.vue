@@ -6,7 +6,7 @@
 			<view v-if="isHasStr('睡眠不好')">
 				<view>请您围绕这些方面，尽可能详细地进行描述：</view>
 				<view>1.时间段</view>
-				<view>2.是在家，里还是在别的地方（酒店等）</view>
+				<view>2.是在家里还是在别的地方（酒店等）</view>
 				<view>3.您认为睡眠不好的原因</view>
 				<view>4.您当时的心情如何</view>
 				<view>5.当天有哪些令您记忆深刻的细节影响了您的睡眠</view>
@@ -56,7 +56,7 @@
 	
 		<view class="processWrap">
 			<view class="timeIcon">
-				<u-image width="25px" height="25px" style="width: 25px;height: 25px;" src="https://datastream.affectai.cn/callmaterial/images/page21/clock.png"></u-image>
+				<u-image width="25px" height="25px" style="width: 25px;height: 25px;" src="https://dfs.affectai.cn/affect-material/images/page21/clock.png"></u-image>
 			</view>
 			<view class="process">
 				<view class="processing" :style="{width: proWdith + '%'}"></view>
@@ -212,7 +212,7 @@
 	}
 	.page26-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img35.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img35.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -230,7 +230,7 @@
 		background-color: rgb(52,61,90);
 		border-radius: 8px;
 		border: 2px solid rgb(99,79,87);
-		// background-image: url(https://datastream.affectai.cn/callmaterial/images/page21/img2.jpg);
+		// background-image: url(https://dfs.affectai.cn/affect-material/images/page21/img2.jpg);
 		background-position: center;
 		background-size: 122%;
 		background-repeat: no-repeat;

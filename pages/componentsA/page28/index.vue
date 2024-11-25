@@ -17,8 +17,8 @@
 					></typewriter>
 					
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
-					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://datastream.affectai.cn/callmaterial/images/page3/down.png"></u-image> -->
+				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
 		</view>
@@ -51,7 +51,7 @@
 <style lang="scss">
 	.page28-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page22/img1.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page22/img1.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -61,7 +61,7 @@
 			width: 220px;
 			height: 220px;
 			margin: 0 auto;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page22/img2.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page22/img2.png);
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 			width: 220px;
 			height: 340px;
 			margin: 0 auto;
-			background-image: url(https://datastream.affectai.cn/callmaterial/images/page22/img3.png);
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page22/img3.png);
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;

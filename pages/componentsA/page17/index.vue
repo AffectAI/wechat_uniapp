@@ -2,9 +2,9 @@
 	<view class="page17-wrap" @click="next">
 		
 		<view style="width: 95%;display: flex;align-items: center;;position: absolute;top: 300px;left: 0;right: 0;margin: auto;justify-content: space-between;height: 180px;">
-			<u-image width="105px" height="119px" src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img4.png"></u-image>
-			<u-image width="105px" height="119px" src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img4.png"></u-image>
-			<u-image width="105px" height="119px" src="https://datastream.affectai.cn/callmaterial/images/page20-1024/img4.png"></u-image>
+			<u-image width="105px" height="119px" src="https://dfs.affectai.cn/affect-material/images/page20-1024/img4.png"></u-image>
+			<u-image width="105px" height="119px" src="https://dfs.affectai.cn/affect-material/images/page20-1024/img4.png"></u-image>
+			<u-image width="105px" height="119px" src="https://dfs.affectai.cn/affect-material/images/page20-1024/img4.png"></u-image>
 		</view>
 		
 		<!-- 心湖 旅行伙伴2 -->
@@ -18,8 +18,8 @@
 				<view style="flex: 1;margin: 0 15px">
 					王小明，前方出现了分叉路，每条路似乎会遇到不同的风景和事件。让我们仔细看看，抉择一下究竟该选择哪条路吧！
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
-					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://datastream.affectai.cn/callmaterial/images/page3/down.png"></u-image> -->
+				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
 		</view>
@@ -48,7 +48,7 @@
 <style lang="scss">
 	.page17-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page20-1024/img3.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img3.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

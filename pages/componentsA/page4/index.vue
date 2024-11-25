@@ -11,8 +11,8 @@
 				<view style="flex: 1;margin: 0 15px">
 					现在，我们正位于【心湖】旁，如果您能在湖中看到自己的倒影，这意味着您具备了登山的潜力。让我们先去湖边接受试炼吧！
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://datastream.affectai.cn/callmaterial/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
-					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://datastream.affectai.cn/callmaterial/images/page3/down.png"></u-image> -->
+				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
 		</view>
@@ -49,7 +49,7 @@
 <style lang="scss">
 	.page41-wrap {
 		min-height: 100vh;
-		background-image: url(https://datastream.affectai.cn/callmaterial/images/page4/bg.png);
+		background-image: url(https://dfs.affectai.cn/affect-material/images/page4/bg.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

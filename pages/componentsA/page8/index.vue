@@ -11,7 +11,7 @@
 			</view>
 			
 			<view style="text-align: right;">
-				<u-image src="https://datastream.affectai.cn/callmaterial/images/page6/icon1.png" style="float: right;" width="125px" height="125px"></u-image>
+				<u-image src="https://dfs.affectai.cn/affect-material/images/page6/icon1.png" style="float: right;" width="125px" height="125px"></u-image>
 			</view>
 		</view>
 		<view class="submit1" @click="next">继续出发</view>
@@ -47,7 +47,7 @@
 <style lang="scss">
 	.page1-wrap {
 		min-height: 100vh;
-		background-image: url('https://datastream.affectai.cn/callmaterial/images/page5/bg.png') !important;
+		background-image: url('https://dfs.affectai.cn/affect-material/images/page5/bg.png') !important;
 		background-position: center !important;
 		background-size: 100% 100% !important;
 		background-repeat: no-repeat;
