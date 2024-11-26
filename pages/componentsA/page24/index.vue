@@ -1089,7 +1089,6 @@
 					if(this.values[key] == '' || this.values[key] == null) {
 						status = true
 					}
-				    // console.log(key + ": " + this.values[key]);
 				}
 				if(status == true) {
 					this.$refs.uToast.show({

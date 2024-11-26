@@ -264,28 +264,4 @@
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#FFFFFF"
 	}
-	// "tabBar": {
-	// 	"color": "#909399",
-	// 	"selectedColor": "#303133",
-	// 	"backgroundColor": "#FFFFFF",
-	// 	"borderStyle": "black",
-	// 	"list": [{
-	// 			"pagePath": "pages/template/index/index",
-	// 			"iconPath": "static/images/home.png",
-	// 			"selectedIconPath": "static/images/homed.png",
-	// 			"text": "首页"
-	// 		},
-	// 		{
-	// 			"pagePath": "pages/template/task/index",
-	// 			"iconPath": "static/images/task.png",
-	// 			"selectedIconPath": "static/images/tasked.png",
-	// 			"text": "任务列表"
-	// 		},
-	// 		{
-	// 			"pagePath": "pages/template/mine/index",
-	// 			"iconPath": "static/images/mined.png",
-	// 			"selectedIconPath": "static/images/mine.png",
-	// 			"text": "个人中心"
-	// 		}]
-	// }
 }

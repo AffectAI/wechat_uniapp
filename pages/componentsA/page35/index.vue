@@ -55,15 +55,18 @@
 		
 		<view class="charts-box3" style="margin: 20px auto;">
 			<view style="color: #fff;font-size: 16px;text-align: center;padding-top: 20px;padding-bottom: 20px;">BDRS-20双相情感障碍评估结果</view>
-			<!-- <view style="margin: 0 auto;width: 90%;padding: 15px;box-sizing: border-box;height: 130px;">
-				<view class="phq4"></view>
-			</view> -->
-			<qiun-data-charts 
+			<view style="margin: 0 auto;width: 100%;padding: 15px;box-sizing: border-box;position: relative;">
+				<view class="phq5">
+					<view class="score_bg" :style="{bottom: bottomComputed3+'px',left: leftComputed3 + '%'}">总分：{{person_info ? person_info.BDRS_20 || 0 : 0}}分</view>
+				</view>
+				
+			</view>
+			<!-- <qiun-data-charts 
 				style="width: 95%;;margin: 0 auto;"
 			    type="mix"
 			    :opts="opts2"
 			    :chartData="chartData2"
-			/>
+			/> -->
 		</view>
 		
 	</view>
@@ -80,7 +83,7 @@
 			return {
 			   index: 1,
 			   chartData: {},
-			   chartData2: {},				
+			   chartData2: {},
 				opts: {
 					color: ["#66dcb0","#91CB74","#FAC858","#EE6666","#73C0DE","#3CA272","#FC8452","#9A60B4","#ea7ccc"],
 					padding: [5,5,5,5],
@@ -154,7 +157,7 @@
 		mounted() {
 			
 			this.getServerData();
-			this.getServerData2();
+			// this.getServerData2();
 		},
 		computed: {
 			// 0-21
@@ -198,10 +201,75 @@
 				} else {
 					return 0
 				}
-			}
+			},
+			
+			// 0-60
+			leftComputed3() {
+				if(this.person_info != undefined && this.person_info.BDRS_20 != undefined) {
+					// 0
+					if(this.person_info.BDRS_20 == 0) {
+						return '-4';
+					}
+					
+					if(this.person_info.BDRS_20 > 0 && this.person_info.BDRS_20 <= 5) {
+						return 1;
+					}
+					if(this.person_info.BDRS_20 > 5 && this.person_info.BDRS_20 <= 10) {
+						return parseFloat(this.person_info.BDRS_20) - 1;
+					}
+					if(this.person_info.BDRS_20 > 10 && this.person_info.BDRS_20 <= 20) {
+						return parseFloat(this.person_info.BDRS_20);
+					}
+					if(this.person_info.BDRS_20 > 20 && this.person_info.BDRS_20 <= 25) {
+						return parseFloat(this.person_info.BDRS_20) + 1;
+					}
+					if(this.person_info.BDRS_20 > 25 && this.person_info.BDRS_20 <= 30) {
+						return parseFloat(this.person_info.BDRS_20) + 3;
+					}
+					if(this.person_info.BDRS_20 > 30 && this.person_info.BDRS_20 <= 35) {
+						return parseFloat(this.person_info.BDRS_20) + 3;
+					}
+					if(this.person_info.BDRS_20 > 35 && this.person_info.BDRS_20 <= 40) {
+						return parseFloat(this.person_info.BDRS_20) + 4;
+					}
+					if(this.person_info.BDRS_20 > 40 && this.person_info.BDRS_20 <= 45) {
+						return parseFloat(this.person_info.BDRS_20) + 5;
+					}
+					if(this.person_info.BDRS_20 > 45 && this.person_info.BDRS_20 <= 50) {
+						return parseFloat(this.person_info.BDRS_20) + 8;
+					}
+					if(this.person_info.BDRS_20 > 50 && this.person_info.BDRS_20 <= 60) {
+						return parseFloat(this.person_info.BDRS_20) + 10;
+					}
+				} 
+				if(this.person_info.BDRS_20 == undefined) {
+					return '-4';
+				}
+			},
+			bottomComputed3() {
+				if(this.person_info.BDRS_20 == undefined) {
+					return 40;
+				}
+				
+				if(this.person_info.BDRS_20 > 0 && this.person_info.BDRS_20 <= 5) {
+					return 60;
+				}
+				
+				if(this.person_info.BDRS_20 > 10 && this.person_info.BDRS_20 <= 20) {
+					return 80;
+				}
+				if(this.person_info.BDRS_20 > 20 && this.person_info.BDRS_20 <= 30) {
+					return 90;
+				}
+				if(this.person_info.BDRS_20 > 40 && this.person_info.BDRS_20 <= 50) {
+					return 120;
+				}
+				if(this.person_info.BDRS_20 > 50 && this.person_info.BDRS_20 <= 60) {
+					return 140;
+				}
+			},
 		},
 		methods: {
-			
 			next32() {
 				// uni.navigateTo({
 				// 	url: '/pages/componentsA/32/index'
@@ -360,9 +428,35 @@
 			height: 105px;
 			background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/results/img25.png);
 			background-position: center;
-			background-size: 100% 100%;
+			background-size: 100%;
 			background-repeat: no-repeat;
 			position: relative;
+		}
+		.phq5 {
+			width: 100%;
+			min-height: 150px;
+			background-position: center;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			position: relative;
+			padding-bottom: 20px;
+			background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/results/img25.png);
+			
+			.score_bg {
+				width: 80px;
+				height: 40px;
+				background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/results/img9.png);
+				background-position: center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				position: absolute;
+				left: 0;
+				bottom: 57px;
+				font-size: 12px;
+				color: #fff;
+				padding-top: 5px;
+				text-align: center;
+			}
 		}
 		
 		.tit35 {

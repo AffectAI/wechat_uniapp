@@ -566,6 +566,10 @@
 				if(status == false) {
 					this.isSuccess = false;
 					this.tipsText = msg;
+					// this.$refs.uToast.show({
+					// 	title: msg,
+					// 	type: 'error',
+					// })
 				}
 			},
 			uploadVideo(options) {
