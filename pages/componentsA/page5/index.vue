@@ -76,42 +76,11 @@ export default {
 <style lang="scss">
 .page51-wrap {
   min-height: 100vh;
-  background-image: url('https://dfs.affectai.cn/affect-material/images/page5/bg.png');
+  background-image: url("https://dfs.affectai.cn/affect-material/images/page5/bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-
-  .start {
-    position: absolute;
-    width: 100px;
-    height: 43px;
-    left: 0;
-    right: 0;
-    top: 701px;
-    bottom: 150px;
-    margin: auto;
-    color: #000;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 40px;
-    z-index: 500;
-    background-color: #6fcbeb;
-    border-radius: 5px;
-  }
-  .tips {
-    width: 289px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    font-size: 12px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
   .dialogue {
     width: 96%;
     margin: 0 auto;

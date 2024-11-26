@@ -49,7 +49,7 @@
         <view>5.有哪些令您记忆深刻的细节</view>
       </view>
 
-      <view v-if="true">
+      <view v-if="isHasStr('误解')">
         <view>请您围绕这些方面，尽可能详细地进行描述：</view>
         <view>1.误解您的人和您的关系</view>
         <view>2.误解的具体内容</view>
@@ -58,40 +58,17 @@
         <view>5.有哪些令您记忆深刻的细节</view>
       </view>
     </view>
-		<u-button text="渐变色按钮" color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))"></u-button>
     <view class="endSound">
       <u-button
-        type="success"
+        :custom-style="btnstyle"
         @click="endSound"
-        :disabled="false"
+        :disabled="endSoundDisabled"
         :ripple="true"
         size="medium"
       >
-        完成 ({{ timer }})
+        {{ endSoundSure }}
       </u-button>
     </view>
-
-    <!-- <view
-      @click="endSound"
-      v-if="timeCount >= 20"
-      style="
-        width: 80px;
-        text-align: center;
-        line-height: 45px;
-        line-height: 45px;
-        font-size: 17px;
-        border-radius: 5px;
-        background-color: #58a5f3;
-        position: absolute;
-        right: 0;
-        left: 0;
-        margin: auto;
-        bottom: 30%;
-      "
-    >
-      完成
-    </view> -->
-
     <view class="processWrap">
       <view class="timeIcon">
         <u-image
@@ -114,10 +91,12 @@ export default {
     return {
       btnstyle: {
         color: "#fff",
-        width: "160px",
-        background: "#0cb1bd",
+        width: "130px",
+        background: "#5ea9f4",
       },
-      timer: 20,
+      endSoundSure: "",
+      timer: 20, //按钮倒计时
+      endSoundDisabled: true,
       proWdith: 0,
       time: null,
       timeCount: 0,
@@ -137,9 +116,22 @@ export default {
     this.ctx && this.ctx.stop();
   },
   mounted() {
-    this.initSound();
+    this.startCountdown();
   },
   methods: {
+    startCountdown() {
+      this.endSoundSure = `完成(${this.timer})`;
+      const countdown = setInterval(() => {
+        this.timer--;
+        this.endSoundSure = `完成(${this.timer})`;
+        if (this.timer <= 0) {
+          this.endSoundSure = "完成";
+          clearInterval(countdown);
+          this.endSoundDisabled = false;
+        }
+      }, 1000);
+      this.initSound();
+    },
     isHasStr(keyword) {
       // return this.liuyanTxt.includes(keyword);
       return false;
@@ -149,12 +141,9 @@ export default {
     },
     initSound() {
       let startTime = this.getCurrentFormattedTime();
+      // 开始录音
       this.ctx = uni.getRecorderManager();
       this.ctx.onStop((res) => {
-        console.log(
-          "recorder stop tempFilePath" + JSON.stringify(res.tempFilePath)
-        );
-        // this.uploadRecording(res.tempFilePath);
         this.$emit("setRecore", {
           recoreTempPath: res.tempFilePath,
           audioType: "audio",
@@ -175,7 +164,6 @@ export default {
         clearInterval(this.time);
         this.time = null;
       }
-      const speed = 1000;
       if (!this.time) {
         this.time = setInterval(() => {
           if (this.timeCount >= 60) {
@@ -183,7 +171,7 @@ export default {
           }
           this.timeCount++;
           this.proWdith += 1.666;
-        }, speed);
+        }, 1000);
       }
     },
     endSound() {
@@ -211,7 +199,7 @@ export default {
         formattedTime = null;
       // 请求公共服务
       await uni.request({
-        url: "https://www.baidu.com", // 可替换为任意稳定的公共服务
+        url: "https://pyrom.affectai.cn", // 可替换为任意项目内绑定地址
         method: "HEAD",
         success: (res) => {
           let serverDate = null;
@@ -235,10 +223,6 @@ export default {
         },
         fail: (err) => {
           console.error("获取服务器时间失败：", err);
-          this.$refs.uToast.show({
-            title: "服务器时间获取失败",
-            type: "error",
-          });
           // 失败情况下获取本地时间
           const now = new Date().getTime();
           // 格式化时间字符串

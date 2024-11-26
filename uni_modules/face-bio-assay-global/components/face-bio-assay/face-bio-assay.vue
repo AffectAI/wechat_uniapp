@@ -73,7 +73,6 @@
 				recordTime: 0,
 				videoTempList: [],
 				
-				isSuccess: false, //是否检测完成
 				isVerify: false,
 				isClick: false,
 				screenWidth: 0,
@@ -121,7 +120,7 @@
         formattedTime = null;
       // 请求公共服务
       await uni.request({
-        url: "https://www.baidu.com", // 可替换为任意稳定的公共服务
+        url: "https://pyrom.affectai.cn",
         method: "HEAD",
         success: (res) => {
           let serverDate = null;
@@ -145,10 +144,6 @@
         },
         fail: (err) => {
           console.error("获取服务器时间失败：", err);
-          this.$refs.uToast.show({
-            title: "服务器时间获取失败",
-            type: "error",
-          });
           // 失败情况下获取本地时间
           const now = new Date().getTime();
           // 格式化时间字符串
@@ -203,9 +198,9 @@
 							} else {
 								this.isSuccess = false;
 								this.isVerify = false;
-								this.tipsText = '请将人脸置于屏幕中间，并确保面部完整显示';
+								this.tipsText = '请确保面部完整显示在屏幕之内';
 								this.$emit('pageEvent', false);
-								this.$emit('setFaceStatus', {status: false, msg: '请将人脸置于屏幕中间，并确保面部完整显示'});
+								this.$emit('setFaceStatus', {status: false, msg: '请确保面部完整显示在屏幕之内'});
 							}
 							// if(face.angleArray.pitch >= 0.1 || face.angleArray.roll >= 0.1 || face.angleArray.yaw >= 0.1) {
 							// 	this.tipsText = '请平视摄像头';

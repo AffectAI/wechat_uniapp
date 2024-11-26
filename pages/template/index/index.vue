@@ -235,7 +235,7 @@
     ></page35>
 
     <u-toast ref="uToast" />
-    <!-- <face-bio-assay-glo
+    <face-bio-assay-glo
       ref="face_glo"
       v-if="
         (pageIndex != 35 && pageIndex >= 7) ||
@@ -251,7 +251,7 @@
       @setFaceStatus="setFaceStatus"
       @detectFailed="detectFailed"
     >
-    </face-bio-assay-glo> -->
+    </face-bio-assay-glo>
     <view
       class="tips"
       :class="[isSuccess ? '' : 'errorTips']"
@@ -361,7 +361,7 @@ export default {
     return {
       liuyanTxt: "",
       gloAvtorUrl: "",
-      pageIndex: "26",
+      pageIndex: "27",
       tipsText: "请将人脸置于屏幕之内，并确保面部完整显示",
       tipsTextCss: "tipsTextCss",
       isSuccess: false, //是否检测完成
@@ -452,7 +452,7 @@ export default {
         formattedTime = null;
       // 请求公共服务
       await uni.request({
-        url: "https://www.baidu.com", // 可替换为任意稳定的公共服务
+        url: "https://pyrom.affectai.cn",
         method: "HEAD",
         success: (res) => {
           let serverDate = null;
@@ -476,10 +476,6 @@ export default {
         },
         fail: (err) => {
           console.error("获取服务器时间失败：", err);
-          this.$refs.uToast.show({
-            title: "服务器时间获取失败",
-            type: "error",
-          });
           // 失败情况下获取本地时间
           const now = Date.now();
           // 格式化时间字符串
@@ -508,13 +504,11 @@ export default {
           pageIndex == "page13_next_loading" ||
           pageIndex == "page13_next_desc")
       ) {
-        this.$refs.uToast.show({
-          title: "请将人脸置于屏幕中间，并确保面部完整显示",
+        this.tipsText = "请确保面部完整显示在屏幕之内";
+        return this.$refs.uToast.show({
+          title: "请确保面部完整显示在屏幕之内",
           type: "error",
         });
-        this.tipsText = "请将人脸置于屏幕中间，并确保面部完整显示";
-
-        return;
       }
 
       this.pageIndex = pageIndex;

@@ -23,7 +23,7 @@
 					src="https://dfs.affectai.cn/affect-material/images/page20-1024/img28.png">
 				</u-image>
 			</view>
-			<view class="center" style="height: 200px;">
+			<view class="center" style="height: auto;">
 				<view style="width: 114px;">
 					<u-image  width="114px" height="138px" :src="gloAvtorUrl"></u-image>
 				</view>
@@ -245,7 +245,7 @@
 				display: flex;background-color: #f1f1f4;
 				border-bottom-left-radius: 10px;
 				border-bottom-right-radius: 10px;
-				height: 158px;	
+				height: auto;	
 				box-sizing: border-box;
 				padding: 11px 21px;
 			}

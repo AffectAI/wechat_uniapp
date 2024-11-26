@@ -8,7 +8,7 @@
 				<view style="width: 114px;">
 					<u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>
-				<view style="flex: 1;margin: 0 15px">
+				<view style="flex: 1;margin: 0 5px">
 					现在，我们正位于【心湖】旁，如果您能在湖中看到自己的倒影，这意味着您具备了登山的潜力。让我们先去湖边接受试炼吧！
 				</view>
 				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
@@ -82,7 +82,7 @@
 				border-top-right-radius: 10px;
 				border-bottom-left-radius: 10px;
 				border-bottom-right-radius: 10px;
-				height: 158px;	
+				height: auto;	
 				box-sizing: border-box;
 				padding: 11px 21px;
 			}

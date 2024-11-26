@@ -11,7 +11,7 @@
 		
 		<view class="dialogue">
 			<view class="top">旅行伙伴</view>
-			<view class="center" style="height: 200px;">
+			<view class="center" style="height: auto;">
 				<view style="width: 114px;">
 					<u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>

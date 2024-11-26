@@ -6,11 +6,11 @@
 		
 		<view class="dialogue">
 			<view class="top">旅行伙伴</view>
-			<view class="center"  style="height: 200px;">
+			<view class="center"  style="height: auto;">
 				<view style="width: 114px;">
 					<u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>
-				<view style="flex: 1;margin: 0 15px">
+				<view style="flex: 1;margin: 0 5px">
 					恭喜您通过心湖完成自我观察！为了帮助您更好地完成这趟心灵之旅，我要送您一件重要的礼物—-「心镜」。在心灵之旅中，看见自己、洞察内心是最关键的。
 					出发前，让我们先通过心镜初步认识自己的内心世界吧！
 				</view>
