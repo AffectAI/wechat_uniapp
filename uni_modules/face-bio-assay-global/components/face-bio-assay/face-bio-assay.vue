@@ -115,23 +115,48 @@
 			chooseVideo() {
 				this.cameraShow = true
 			},
-			getCurrentFormattedTime() {  
-			    // 获取当前时间  
-			    const now = new Date();  
-			  
-			    // 获取年、月、日、小时、分钟和秒  
-			    const year = now.getFullYear();  
-			    const month = String(now.getMonth() + 1).padStart(2, '0'); // 月份从0开始，需要加1，并补零  
-			    const day = String(now.getDate()).padStart(2, '0'); // 补零  
-			    const hours = String(now.getHours()).padStart(2, '0'); // 补零  
-			    const minutes = String(now.getMinutes()).padStart(2, '0'); // 补零  
-			    const seconds = String(now.getSeconds()).padStart(2, '0'); // 补零  
-			  
-			    // 格式化时间字符串  
-			    const formattedTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;  
-			  
-			    return formattedTime;  
-			},  
+			async getCurrentFormattedTime() {
+      // 通过公共资源获取服务器时间
+      let serverOffset = 0,
+        formattedTime = null;
+      // 请求公共服务
+      await uni.request({
+        url: "https://www.baidu.com", // 可替换为任意稳定的公共服务
+        method: "HEAD",
+        success: (res) => {
+          let serverDate = null;
+          const date = new Date(res.header.Date);
+          const year = date.getFullYear();
+          const month = date.getMonth() + 1;
+          const day = date.getDate();
+          const hours = date.getHours();
+          const minutes = date.getMinutes();
+          const seconds = date.getSeconds();
+          serverDate = `${year}/${month.toString().padStart(2, "0")}/${day
+            .toString()
+            .padStart(2, "0")} ${hours.toString().padStart(2, "0")}:${minutes
+            .toString()
+            .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+          const serverTime = new Date(serverDate).getTime(); // 服务器返回时间
+          const localTime = Date.now(); // 本地时间戳
+          serverOffset = serverTime - localTime; // 计算偏移量
+          formattedTime = Date.now() + serverOffset;
+          return formattedTime;
+        },
+        fail: (err) => {
+          console.error("获取服务器时间失败：", err);
+          this.$refs.uToast.show({
+            title: "服务器时间获取失败",
+            type: "error",
+          });
+          // 失败情况下获取本地时间
+          const now = new Date().getTime();
+          // 格式化时间字符串
+          formattedTime = now;
+          return formattedTime;
+        },
+      });
+    }, 
 			setMaxFace(faceData) {
 				const faces = faceData.faceInfo // 获取到所有人脸信息
 				let maxFaceIndex = 0
