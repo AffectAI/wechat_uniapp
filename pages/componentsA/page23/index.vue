@@ -12,7 +12,7 @@
 				<view style="flex: 1;margin: 0 15px">
 					亲爱的旅人，旅行至此，是否感到有些疲惫?您可以打开心灵旅馆的“解忧日记”，帮助您更了解近期的情绪状态。
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+				<view style="width: 22px;display: flex;background-image: url('https://dfs.affectai.cn/affect-material/images/page3/down.png');background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
 					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
@@ -46,10 +46,10 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.page23-wrap {
 		min-height: 100vh;
-		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img32.png);
+		background-image: url('https://dfs.affectai.cn/affect-material/images/page20-1024/img32.png');
 		background-position: inherit;
 		background-size: cover;
 		background-repeat: no-repeat;

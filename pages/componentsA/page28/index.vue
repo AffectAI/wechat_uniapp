@@ -21,7 +21,7 @@
           style="
             width: 22px;
             display: flex;
-            background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);
+            background-image: url('https://dfs.affectai.cn/affect-material/images/page3/down.png');
             background-size: 70%;
             background-repeat: no-repeat;
             background-position: center bottom;
@@ -55,11 +55,11 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .page28-wrap {
   min-height: 100vh;
   height: 100vh;
-  background-image: url(https://dfs.affectai.cn/affect-material/images/page22/img1.png);
+  background-image: url('https://dfs.affectai.cn/affect-material/images/page22/img1.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@ export default {
     width: 40%;
     height: 20%;
     margin: 0 auto;
-    background-image: url(https://dfs.affectai.cn/affect-material/images/page22/img2.png);
+    background-image: url('https://dfs.affectai.cn/affect-material/images/page22/img2.png');
     background-position: center;
     background-size: contain;
   }
@@ -77,7 +77,7 @@ export default {
     width: 60%;
     height: 50%;
     margin: 0 auto;
-    background-image: url(https://dfs.affectai.cn/affect-material/images/page22/img3.png);
+    background-image: url('https://dfs.affectai.cn/affect-material/images/page22/img3.png');
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -86,8 +86,6 @@ export default {
   .dialogue {
     width: 96%;
     margin: auto;
-    // padding-bottom: 20px;
-
     .top {
       width: 110px;
       height: 36px;

@@ -235,7 +235,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .page26-wrap {
   min-height: 100vh;
   background-image: url("https://dfs.affectai.cn/affect-material/images/page20-1024/img35.png");
@@ -255,7 +255,6 @@ export default {
     background-color: rgb(52, 61, 90);
     border-radius: 8px;
     border: 2px solid rgb(99, 79, 87);
-    // background-image: url(https://dfs.affectai.cn/affect-material/images/page21/img2.jpg);
     background-position: center;
     background-size: 122%;
     background-repeat: no-repeat;

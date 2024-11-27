@@ -52,10 +52,10 @@
 <script>
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.wrap14 {
 		min-height: 100vh;
-		background-image: url(https://dfs.affectai.cn/affect-material/images/page18-1022/bird-start-bg.png);
+		background-image: url('https://dfs.affectai.cn/affect-material/images/page18-1022/bird-start-bg.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -75,7 +75,7 @@
 			.m-a {
 				width: 110px;
 				height: 45px;
-				background-image: url(https://dfs.affectai.cn/affect-material/images/page19-1023/m-a.png);
+				background-image: url('https://dfs.affectai.cn/affect-material/images/page19-1023/m-a.png');
 				background-position: center;
 				background-size: 100%;
 				background-repeat: no-repeat;
@@ -87,7 +87,7 @@
 			.m-b {
 				width: 110px;
 				height: 45px;
-				background-image: url(https://dfs.affectai.cn/affect-material/images/page19-1023/m-b.png);
+				background-image: url('https://dfs.affectai.cn/affect-material/images/page19-1023/m-b.png');
 				background-position: center;
 				background-size: 100%;
 				background-repeat: no-repeat;

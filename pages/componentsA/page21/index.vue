@@ -10,7 +10,7 @@
 				<view style="flex: 1;margin: 0 15px">
 					你选择在<text v-if="roomIndex">{{roomList[roomIndex-1].name}}</text>进行休息！听说那里会提供不少别具一格的山顶美食，您可以提前预定您想享用的两道菜肴哦~
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+				<view style="width: 22px;display: flex;background-image: url('https://dfs.affectai.cn/affect-material/images/page3/down.png');background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
 					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
@@ -52,10 +52,9 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.page21-wrap {
 		min-height: 100vh;
-		// background-image: url(https://dfs.affectai.cn/affect-material/images/page4/bg.png);
 		background-position: inherit;
 		background-size: cover;
 		background-repeat: no-repeat;

@@ -254,7 +254,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.nextPage {
 		width: 110px;
 		height: 45px;

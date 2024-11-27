@@ -246,7 +246,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.nextPage {
 		width: 110px;
 		height: 45px;
@@ -261,7 +261,7 @@
 	}
 	.page1-wrap {
 		min-height: 100vh;
-		background-image: url(https://dfs.affectai.cn/affect-material/images/page5/bg.png);
+		background-image: url('https://dfs.affectai.cn/affect-material/images/page5/bg.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

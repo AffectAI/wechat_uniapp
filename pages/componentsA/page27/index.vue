@@ -85,7 +85,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .cover {
   position: fixed;
   width: 100vw;
@@ -99,7 +99,6 @@ export default {
 .page27-wrap {
   width: 100vw;
   min-height: 100vh;
-  // background-image: url(https://dfs.affectai.cn/affect-material/images/page4/bg.png);
   background-image: url('https://dfs.affectai.cn/affect-material/images/page20-1024/img32.png');
   background-position: center;
   background-size: cover;

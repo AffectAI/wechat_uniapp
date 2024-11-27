@@ -197,10 +197,10 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.page25-wrap {
 		min-height: 100vh;
-		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img35.png);
+		background-image: url('https://dfs.affectai.cn/affect-material/images/page20-1024/img35.png');
 		background-position: inherit;
 		background-size: cover;
 		background-repeat: no-repeat;

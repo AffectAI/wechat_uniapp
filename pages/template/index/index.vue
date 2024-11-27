@@ -361,7 +361,7 @@ export default {
     return {
       liuyanTxt: "",
       gloAvtorUrl: "",
-      pageIndex: "29",
+      pageIndex: "1",
       tipsText: "请确保面部完整显示在屏幕之内",
       tipsTextCss: "tipsTextCss",
       isSuccess: false, //是否检测完成
@@ -938,7 +938,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @keyframes fadeOut {
   to {
     opacity: 0;

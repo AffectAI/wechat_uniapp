@@ -58,7 +58,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.scroll-view_H {
 		width: 500px;
 		height: 492px;
@@ -67,7 +67,7 @@
 	}
 	.page18-wrap {
 		min-height: 100vh;
-		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img5.png);
+		background-image: url('https://dfs.affectai.cn/affect-material/images/page20-1024/img5.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -86,7 +86,7 @@
 		padding: 0 10px;
 	}
 	.item1 {
-		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img6.png);
+		background-image: url('https://dfs.affectai.cn/affect-material/images/page20-1024/img6.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -94,7 +94,7 @@
 		background-color: beige;
 	}
 	.item2 {
-		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img7.png);
+		background-image: url('https://dfs.affectai.cn/affect-material/images/page20-1024/img7.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -102,7 +102,7 @@
 		background-color: beige;
 	}
 	.item3 {
-		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img8.png);
+		background-image: url('https://dfs.affectai.cn/affect-material/images/page20-1024/img8.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

@@ -26,7 +26,7 @@
           style="
             width: 22px;
             display: flex;
-            background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);
+            background-image: url('https://dfs.affectai.cn/affect-material/images/page3/down.png');
             background-size: 70%;
             background-repeat: no-repeat;
             background-position: center bottom;
@@ -65,10 +65,10 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .page31-wrap {
   min-height: 100vh;
-  background-image: url(https://dfs.affectai.cn/affect-material/images/page22/img4.png);
+  background-image: url('https://dfs.affectai.cn/affect-material/images/page22/img4.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,8 +83,8 @@ export default {
   .img1 {
     width: 180px;
     height: 85px;
-    background-image: url(https://dfs.affectai.cn/affect-material/images/page25/page25/img1.png);
-    // background-image: url(https://dfs.affectai.cn/affect-material/images/flight/img53.png);
+    background-image: url('https://dfs.affectai.cn/affect-material/images/page25/page25/img1.png');
+    // background-image: url('https://dfs.affectai.cn/affect-material/images/flight/img53.png');
 
     position: absolute;
     top: 20px;
@@ -93,7 +93,7 @@ export default {
   .img2 {
     width: 180px;
     height: 85px;
-    background-image: url(https://dfs.affectai.cn/affect-material/images/page25/page25/img2.png);
+    background-image: url('https://dfs.affectai.cn/affect-material/images/page25/page25/img2.png');
     position: absolute;
     top: 20px;
     right: 10px;
@@ -103,7 +103,7 @@ export default {
     height: 85px;
     top: 250px;
     left: 10px;
-    background-image: url(https://dfs.affectai.cn/affect-material/images/page25/page25/img3.png);
+    background-image: url('https://dfs.affectai.cn/affect-material/images/page25/page25/img3.png');
   }
   .img4 {
     width: 180px;
@@ -111,14 +111,14 @@ export default {
     margin: 0 10px;
     top: 227px;
     right: 0;
-    background-image: url(https://dfs.affectai.cn/affect-material/images/page25/page25/img4.png);
+    background-image: url('https://dfs.affectai.cn/affect-material/images/page25/page25/img4.png');
   }
   .img5 {
     width: 180px;
     height: 85px;
     top: 133px;
     left: 83px;
-    background-image: url(https://dfs.affectai.cn/affect-material/images/page25/img5.png);
+    background-image: url('https://dfs.affectai.cn/affect-material/images/page25/img5.png');
   }
 
   .dialogue {

@@ -11,7 +11,7 @@
 				<view style="flex: 1;margin: 0 15px">
 					我们已经确认好旅行的路线了！在这段旅途中，有不同的旅店，各具风格。请您根据自己的喜好，选择心仪的旅店，我们将为您提供贴心周到的服务，祝您体验愉快！
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+				<view style="width: 22px;display: flex;background-image: url('https://dfs.affectai.cn/affect-material/images/page3/down.png');background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
 					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
@@ -38,11 +38,10 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.page19-wrap {
 		min-height: 100vh;
-		// background-image: url(https://datastream .affectai.cn/callmaterial/images/page20-1024/img10.png);
-		background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img9.png);
+		background-image: url('https://dfs.affectai.cn/affect-material/images/page20-1024/img9.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

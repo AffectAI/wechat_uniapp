@@ -73,7 +73,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .page51-wrap {
   min-height: 100vh;
   background-image: url("https://dfs.affectai.cn/affect-material/images/page5/bg.png");

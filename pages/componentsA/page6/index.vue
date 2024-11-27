@@ -14,7 +14,7 @@
 					恭喜您通过心湖完成自我观察！为了帮助您更好地完成这趟心灵之旅，我要送您一件重要的礼物—-「心镜」。在心灵之旅中，看见自己、洞察内心是最关键的。
 					出发前，让我们先通过心镜初步认识自己的内心世界吧！
 				</view>
-				<view style="width: 22px;display: flex;background-image: url(https://dfs.affectai.cn/affect-material/images/page3/down.png);background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
+				<view style="width: 22px;display: flex;background-image: url('https://dfs.affectai.cn/affect-material/images/page3/down.png');background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
 					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
 				</view>
 			</view>
@@ -41,10 +41,10 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.page61-wrap {
 		min-height: 100vh;
-		background-image: url(https://dfs.affectai.cn/affect-material/images/page6/bg.png);
+		background-image: url('https://dfs.affectai.cn/affect-material/images/page6/bg.png');
 		background-position: right;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -53,7 +53,7 @@
 		.img1 {
 			width: 220px;
 			height: 220px;
-			background-image: url(https://dfs.affectai.cn/affect-material/images/page6/icon1.png);
+			background-image: url('https://dfs.affectai.cn/affect-material/images/page6/icon1.png');
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;
@@ -64,7 +64,7 @@
 			width: 185px;
 			height: 220px;
 			margin: 0 auto;
-			background-image: url(https://dfs.affectai.cn/affect-material/images/page6/pep.png);
+			background-image: url('https://dfs.affectai.cn/affect-material/images/page6/pep.png');
 			background-position: center;
 			background-size: 100%;
 			background-repeat: no-repeat;

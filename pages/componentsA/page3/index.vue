@@ -46,7 +46,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .page31-wrap {
   min-height: 100vh;
   height: 100vh;

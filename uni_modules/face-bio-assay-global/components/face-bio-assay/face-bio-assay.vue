@@ -3,7 +3,7 @@
 		
 		<!-- <view class="start" @click="chooseVideo">开始拍摄</view> -->
 		
-		<view  style="position: relative;width: 60px;height: 60px;background-image: url(https://dfs.affectai.cn/affect-material/images/page5/icon4.png);background-position: center;background-repeat: no-repeat;background-size: 100%;">
+		<view  style="position: relative;width: 60px;height: 60px;background-image: url('https://dfs.affectai.cn/affect-material/images/page5/icon4.png');background-position: center;background-repeat: no-repeat;background-size: 100%;">
 			<view 
 				class="camera-cover">
 				<camera class="camera"  v-if="cameraShow" mode="normal"  flash="off" device-position="front" resolution="high" @stop="stop" @error="error"
