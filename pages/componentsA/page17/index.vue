@@ -16,7 +16,7 @@
 					<u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>
 				<view style="flex: 1;margin: 0 15px">
-					王小明，前方出现了分叉路，每条路似乎会遇到不同的风景和事件。让我们仔细看看，抉择一下究竟该选择哪条路吧！
+					前方出现了分叉路，每条路似乎会遇到不同的风景和事件。让我们仔细看看，抉择一下究竟该选择哪条路吧！
 				</view>
 				<view style="width: 22px;display: flex;background-image: url('https://dfs.affectai.cn/affect-material/images/page3/down.png');background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
 					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->

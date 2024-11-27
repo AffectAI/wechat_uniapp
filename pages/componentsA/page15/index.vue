@@ -9,7 +9,7 @@
 					<u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>
 				<view style="flex: 1;margin: 0 15px">
-					感谢你王小明，因为你的帮助，我才拥有一顿丰盛的晚餐。请继续前进吧！祝你旅途愉快！
+					感谢你，因为你的帮助，我才拥有一顿丰盛的晚餐。请继续前进吧！祝你旅途愉快！
 				</view>
 				<view style="width: 22px;display: flex;background-image: url('https://dfs.affectai.cn/affect-material/images/page3/down.png');background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
 				</view>

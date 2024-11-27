@@ -1,5 +1,5 @@
 <template>
-  <view class="page32-wrap" @click="next">
+  <view class="page32-wrap">
     <view class="models32">
       <view
         style="
@@ -197,6 +197,7 @@ export default {
         this.$emit("pageEvent", { pageIndex: "33" });
         clearInterval(this.time);
         this.time = null;
+        this.next();
       }, 300);
     },
     soundEvent() {
@@ -217,7 +218,7 @@ export default {
 .page32-wrap {
   min-height: 100vh;
   // background-image: url('https://dfs.affectai.cn/affect-material/images/page20-1024/flight/img25.png');
-  background-image: url('https://dfs.affectai.cn/affect-material/images/page20-1024/img31.png');
+  background-image: url("https://dfs.affectai.cn/affect-material/images/page20-1024/img31.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

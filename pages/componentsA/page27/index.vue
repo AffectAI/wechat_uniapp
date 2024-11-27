@@ -49,7 +49,7 @@ export default {
     isSuccess: {
       handler(newValue, oldValue) {
         console.log(newValue);
-        if (newValue && this.opacity >= 0.7) {
+        if (newValue && this.opacity >= 0.77) {
           this.$emit("pageEvent", { pageIndex: "28" });
         }
       },

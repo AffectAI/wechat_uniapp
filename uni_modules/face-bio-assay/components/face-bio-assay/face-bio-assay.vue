@@ -182,6 +182,7 @@ export default {
         }, 1000);
       }, 300);
     },
+    // 录制视频传给后台
     chooseVideo() {
       setTimeout(() => {
         this.cameraShow = true;
@@ -427,12 +428,16 @@ export default {
 <style lang="scss" scoped>
 .page1-wrap {
   min-height: 100vh;
-  background-image: url('https://dfs.affectai.cn/affect-material/images/page5/bg.png');
+  background-image: url("https://dfs.affectai.cn/affect-material/images/page5/bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   .tips {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 289px;
     height: 40px;
     line-height: 40px;
@@ -440,9 +445,6 @@ export default {
     background-color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
     border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    margin-top: -30px;
   }
   .start {
     position: absolute;

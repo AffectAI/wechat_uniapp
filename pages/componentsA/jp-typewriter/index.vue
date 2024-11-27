@@ -1,8 +1,13 @@
 <template>
   <text class="typewriter" :style="textStyle">
     <text class="text">{{ currentText }}</text>
-	<image v-if="cursorImg && !typingFinished" class="cursor" :src="cursorImg" mode="heightFix" />
-	<text v-if="!cursorImg && !typingFinished" class="cursortext">|</text>
+    <image
+      v-if="cursorImg && !typingFinished"
+      class="cursor"
+      :src="cursorImg"
+      mode="heightFix"
+    />
+    <text v-if="!cursorImg && !typingFinished" class="cursortext">|</text>
   </text>
 </template>
 
@@ -11,11 +16,11 @@ export default {
   props: {
     text: {
       type: String,
-      default: '',
+      default: "",
     },
     cursorImg: {
       type: String,
-      default: '', // 光标图片的默认 URL
+      default: "", // 光标图片的默认 URL
     },
     speed: {
       type: Number,
@@ -28,7 +33,7 @@ export default {
   },
   data() {
     return {
-      currentText: '', // 当前显示的文字
+      currentText: "", // 当前显示的文字
       currentIndex: 0, // 当前文字的索引
       typingFinished: false, // 打字完成的标志
     };
@@ -47,7 +52,7 @@ export default {
           } else {
             clearInterval(typingInterval);
             this.typingFinished = true;
-			this.$emit('finished', '')
+            this.$emit("finished", this.typingFinished);
           }
         }, this.speed);
       }
@@ -62,8 +67,8 @@ export default {
   margin-left: 5px;
   margin-bottom: -0.2em;
 }
-.cursortext{
-   margin-left: 5px;
-   color: #000;
+.cursortext {
+  margin-left: 5px;
+  color: #000;
 }
 </style>

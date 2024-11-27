@@ -57,11 +57,8 @@
           >
             <view @click="readYs">
               <text
-                style="
-                  font-size: 14px;
-                  color: #07c160;
-                  text-decoration: underline;
-                "
+                style="color: #07c160; text-decoration: underline"
+                :style="{ fontSize: textSize }"
               >
                 《心理测评隐私政策》
               </text>
@@ -76,7 +73,7 @@
               display: inline-block;
             "
           >
-            请阅读并勾选《心理测评隐私政策》
+            请先阅读《心理测评隐私政策》
           </view>
         </view>
         <view class="readtrue">
@@ -120,7 +117,7 @@
               在本隐私政策中，安徽情感识别科技有限公司是我们从您使用服务中收集或接收到的任何个人信息的数据控制人。
             </view>
 
-            <view class="font16">定义和解释</view>
+            <view class="font16a">定义和解释</view>
             <view style="margin-bottom: 10px">
               “个人信息”指以电子或者其他方式记录的能够单独或者与其他信息结合识别自然人个人身份的各种信息。
             </view>
@@ -137,7 +134,7 @@
               “匿名化”指通过对个人信息的技术处理，使得个人信息主体无法被识别，且处理后的信息不能被复原的过程。
             </view>
 
-            <view class="font16">我们如何收集和使用您的个人信息</view>
+            <view class="font16a">我们如何收集和使用您的个人信息</view>
             <view style="margin-bottom: 10px">
               为向您提供情感识别科技有限公司心理健康评测软件服务，我们将在法律允许的范围内收集您的个人信息。如果您不提供相关个人信息，可能无法享受我们提供的情感识别科技有限公司心理健康评测软件服务或其某些功能，或者无法达到我们提供的情感识别科技有限公司心理健康评测软件服务的预期效果。
             </view>
@@ -148,14 +145,14 @@
             <view style="margin-bottom: 10px">
               具体而言，在您访问、使用我们的情感识别科技有限公司心理健康评测软件服务和/或我们向您提供情感识别科技有限公司心理健康评测软件服务的过程中，我们将在下述情形中收集和使用以下各类信息。
             </view>
-            <view class="font16">登录</view>
+            <view class="font16a">登录</view>
             <view style="margin-bottom: 10px">
               如果您选择使用情感识别科技有限公司心理健康评测软件服务的功能，为便于使用我们为您提供的完整的情感识别科技有限公司心理健康评测软件服务，您需要注册一个账号以访问、登陆并使用我们的情感识别科技有限公司心理健康评测软件服务。
             </view>
             <view style="margin-bottom: 10px">
               您在使用过程中或之后，您需进入情感识别科技有限公司心理健康评测软件提交以下额外个人信息，包括：昵称、年龄、性别、学历，以完善您的个人资料，同时也有助于给您提供更精确的分析和测量结果和更好的服务。上述填写的信息都会被保存在您的情感识别科技有限公司心理健康评测软件本地文件夹里。上述信息属于个人敏感信息。收集该等信息是情感识别科技有限公司心理健康评测软件服务为您提供精确测量所必需，如果不提供该等信息，您将无法使用情感识别科技有限公司心理健康评测软件服务。
             </view>
-            <view class="font16">情感健康分析</view>
+            <view class="font16a">情感健康分析</view>
             <view style="margin-bottom: 10px">
               当您使用情感识别科技有限公司心理健康评测软件服务情感和健康分析功能时，您需通过支持的移动设备视频摄像头/相机拍摄您的面部图像，并抓取您的面部信息。您的面部图像和面部信息将通过情感识别科技有限公司心理健康评测软件传送至本地文件夹，从而为您提供下述测量结果，包括性格指数、压力指数和综合健康评分（“测量结果”）。
             </view>
@@ -169,13 +166,13 @@
             <view style="margin-bottom: 10px">
               当您使用情感识别科技有限公司心理健康评测软件服务面部检测和相关的情感和健康分析功能后，您的个人测量结果，包括性格指数、压力指数和综合健康评分将记录在本地文件夹中。该等信息属于个人敏感信息，且该等信息系您使用情感识别科技有限公司心理健康评测软件分析功能的必要结果。
             </view>
-            <view class="font16"> 意见反馈和服务支持 </view>
+            <view class="font16a"> 意见反馈和服务支持 </view>
 
             <view style="margin-bottom: 10px">
               当您使用情感识别科技有限公司心理健康评测软件的意见反馈功能时，我们会收集您向我们的服务支持团队提供的您对服务的意见、申诉或建议以及您的相关账号信息。
             </view>
 
-            <view class="font16"> 事先征得授权同意的例外 </view>
+            <view class="font16a"> 事先征得授权同意的例外 </view>
             <view style="margin-bottom: 10px">
               根据相关法律法规及国家标准，在以下情形中，情感识别科技有限公司心理健康评测软件服务会依法收集并使用您的个人信息无需征得您的同意：
             </view>
@@ -191,7 +188,7 @@
               为合法新闻报道所要求的；<br />
               学术研究机构基于公共利益开展统计或学术研究所必要的，且对外提供学术研究或描述的结果时，对结果中所包含的个人信息进行去标识化处理的；<br />
               和法律法规规定的其他情形。<br />
-              <view class="font16">补充说明</view><br />
+              <view class="font16a">补充说明</view><br />
               当我们要将信息用于本《隐私政策》未载明的其它用途时，会事先征求您的同意。<br />
               当我们要将基于特定目的收集而来的信息用于其他目的时，会事先征求您的同意。<br />
               若我们从第三方处间接获取您的信息的，我们会在收集前明确以书面形式要求该第三方在已依法取得您同意后收集个人信息，并向您告知共享的信息内容，且涉及敏感信息的在提供给我们使用前需经过您的明确确认，要求第三方对个人信息来源的合法性和合规性作出承诺。<br />
@@ -199,7 +196,7 @@
             </view>
 
             <view style="margin-bottom: 10px">
-              <view class="font16">共享</view><br />
+              <view class="font16a">共享</view><br />
               未经您的同意或授权，我们不会向第三方共享、转让或披露您的个人信息。如需要对外共享、转让或披露您的个人信息，我们会向您告知共享、转让或披露个人信息的目的、数据接收方的类型，并征得您的授权同意。涉及敏感信息的，我们还会告知敏感信息的类型、数据接收方的身份和数据安全能力，并征得您的明示授权同意。
             </view>
 
@@ -211,7 +208,7 @@
               在已经获得您的明确授权或同意后；<br />
               以满足届时适用法律规定为前提，如果我们或我们的关联公司涉及合并、分立、清算、资产或业务的收购或出售等交易，您的个人信息有可能作为此类交易的一部分而被转移，我们将确保该等信息在转移时的机密性，并尽最大可能确保新的持有您个人信息的公司、组织继续受此隐私政策的约束，否则我们将要求该公司、组织重新向您征求授权同意；或<br />
               满足法律法规、法律程序的要求或强制性的政府要求或司法裁定。<br />
-              <view class="font16">公开披露</view><br />
+              <view class="font16a">公开披露</view><br />
               我们仅会在以下情况下，公开披露您的个人信息：
             </view>
 
@@ -234,7 +231,7 @@
             </view>
 
             <view style="margin-bottom: 10px">
-              <view class="font16">我们如何存储和保护您的个人信息</view><br />
+              <view class="font16a">我们如何存储和保护您的个人信息</view><br />
               我们如何存储您的个人信息<br />
               我们将在为本《隐私政策》所列目的合理必需的范围内或为遵守与强制保存特定种类个人信息的适用法律及法规的范围内存储您的个人信息。<br />
             </view>
@@ -254,12 +251,12 @@
             </view>
 
             <view style="margin-bottom: 10px">
-              <view class="font16">信息出境</view><br />
+              <view class="font16a">信息出境</view><br />
               如您的个人信息需被传输至境外以提供服务，我们将另行寻求您的同意并要求相关接收方采用符合我们的指示和本隐私政策的相关的保密及安全措施处理个人信息。此种情况下，我们会采取有效措施保护您的信息安全，例如，在跨境数据转移之前实施数据去标识化或匿名化等安全措施，或通过协议、核查等措施要求境外机构为您的信息保密。<br />
             </view>
 
             <view style="margin-bottom: 10px">
-              <view class="font16">我们如何保护您的个人信息</view><br />
+              <view class="font16a">我们如何保护您的个人信息</view><br />
               我们采取符合业界标准的安全防护措施保护您的个人信息，使其免受未经授权的访问、公开披露、使用、修改、损坏或丢失，例如：
             </view>
 
@@ -290,7 +287,7 @@
             </view>
 
             <view style="margin-bottom: 10px">
-              <view class="font16">回复您的请求</view><br />
+              <view class="font16a">回复您的请求</view><br />
               受限于适用法律，您可联系公司提交您的请求。<br />
             </view>
 
@@ -345,6 +342,7 @@ export default {
         background: "#0cb1bd",
       },
       itemed: "",
+      textSize: "14px",
       indexsed: 100,
       readChecked: false,
       priacyContent: false, //协议内容
@@ -402,13 +400,16 @@ export default {
       this.$emit("gloAvtor", item.url);
     },
     readYs() {
-      this.priacyContent = true;
+      this.textSize = "12px";
+      setTimeout(() => {
+        this.priacyContent = true;
+      }, 100);
     },
-    checkboxGroupChange() {},
     agreen() {
       setTimeout(() => {
         this.priacyContent = false;
         this.readChecked = true;
+        this.textSize = "14px";
       }, 200);
     },
     nextc() {
@@ -519,6 +520,12 @@ export default {
 
       .font16 {
         font-size: 19px;
+        color: #121212;
+        font-family: Microsoft YaHei;
+        font-weight: 700;
+      }
+      .font16a {
+        font-size: 17px;
         color: #121212;
         font-family: Microsoft YaHei;
         font-weight: 700;

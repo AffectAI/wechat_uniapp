@@ -10,17 +10,15 @@
           <u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
         </view>
         <view style="flex: 1; margin: 0 5px">
-          尊敬的用户，欢迎来到“心灵之山”。我是您的旅程伙伴，将陪伴您开启一段探索内心世界的旅程。此行将充满各种挑战与惊喜，让我们共同踏上这段旅途。
+          <typewriter
+            text="尊敬的用户，欢迎来到“心灵之山”。我是您的旅程伙伴，将陪伴您开启一段探索内心世界的旅程。此行将充满各种挑战与惊喜，让我们共同踏上这段旅途。"
+            @finished="typeWriterFinished"
+            :speed="60"
+          ></typewriter>
         </view>
         <view
-          style="
-            width: 22px;
-            display: flex;
-            background-image: url('https://dfs.affectai.cn/affect-material/images/page3/down.png');
-            background-size: 70%;
-            background-repeat: no-repeat;
-            background-position: center bottom;
-          "
+          class="center-down-image"
+          :style="{ backgroundImage: down_image }"
         >
         </view>
       </view>
@@ -29,18 +27,28 @@
 </template>
 
 <script>
+import typewriter from "@/pages/componentsA/jp-typewriter/index.vue";
 export default {
   data() {
     return {
+      down_image: require("../../../static/uview/example/pep.png"),
       innerAudioContext: null,
+      textFinished: false,
     };
+  },
+  components: {
+    typewriter,
   },
   props: ["gloAvtorUrl"],
   beforeDestroy() {},
   mounted() {},
   methods: {
+    typeWriterFinished(e) {
+      this.textFinished = e;
+    },
     next() {
-      this.$emit("pageEvent", { pageIndex: 4 });
+      // 打字完成才可以跳转下一页
+      if (this.textFinished) this.$emit("pageEvent", { pageIndex: 4 });
     },
   },
 };
@@ -99,6 +107,13 @@ export default {
       height: 158px;
       box-sizing: border-box;
       padding: 11px 21px;
+      .center-down-image {
+        width: 22px;
+        display: flex;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+      }
     }
   }
 }

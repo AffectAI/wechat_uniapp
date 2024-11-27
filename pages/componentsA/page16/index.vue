@@ -11,7 +11,7 @@
 					<u-image width="114px" height="125px" :src="gloAvtorUrl"></u-image>
 				</view>
 				<view style="flex: 1;margin: 0 15px">
-					王小明，我们又向上前进了一步，现在正位于【山腰】，让我们继续往前吧！
+					我们又向上前进了一步，现在正位于【山腰】，让我们继续往前吧！
 				</view>
 				<view style="width: 22px;display: flex;background-image: url('https://dfs.affectai.cn/affect-material/images/page7/down.png');background-size: 70%;background-repeat: no-repeat;background-position: center bottom;">
 					<!-- <u-image width="15px" height="15px" style="margin: 0 auto;" src="https://dfs.affectai.cn/affect-material/images/page3/down.png"></u-image> -->
