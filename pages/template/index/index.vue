@@ -13,7 +13,7 @@
       "
     >
       <view class="m-a">{{ goldCoin }}</view>
-      <view class="m-b">{{ playNum }}</view>
+      <!-- <view class="m-b">{{ playNum }}</view> -->
     </view>
 
     <page1
@@ -361,8 +361,8 @@ export default {
     return {
       liuyanTxt: "",
       gloAvtorUrl: "",
-      pageIndex: "27",
-      tipsText: "请将人脸置于屏幕之内，并确保面部完整显示",
+      pageIndex: "28",
+      tipsText: "请确保面部完整显示在屏幕之内",
       tipsTextCss: "tipsTextCss",
       isSuccess: false, //是否检测完成
       face: {},
@@ -373,8 +373,44 @@ export default {
       journey_choices: {}, // 捕鸟记录、路线选择、订酒店、订餐记录
       time_slice: {},
       goldCoin: 1500, // 金币数
-      playNum: 3, // 次数
-      page_time: {}, // 页面开始时间
+      // playNum: 3, // 次数
+      // 页面开始时间
+      page_time: {
+        page2_start: null,
+        page3_start: null,
+        page4_start: null,
+        page5_start: null,
+        page6_start: null,
+        page7_start: null,
+        page8_start: null,
+        page9_start: null,
+        page10_start: null,
+        page11_start: null,
+        page12_start: null,
+        page13_start: null,
+        page14_start: null,
+        page15_start: null,
+        page16_start: null,
+        page17_start: null,
+        page18_start: null,
+        page19_start: null,
+        page20_start: null,
+        page21_start: null,
+        page22_start: null,
+        page23_start: null,
+        page24_start: null,
+        page25_start: null,
+        page26_start: null,
+        page27_start: null,
+        page28_start: null,
+        page29_start: null,
+        page30_start: null,
+        page31_start: null,
+        page32_start: null,
+        page33_start: null,
+        page34_start: null,
+        page35_start: null,
+      },
       recoreTempPath: "", // 音频临时路径
       // 捕鸟
       detection_module_time_slice: {
@@ -495,7 +531,7 @@ export default {
       const { pageIndex } = params;
       if (
         !this.isSuccess &&
-        pageIndex != 35 &&
+        pageIndex != "35" &&
         (pageIndex > 7 ||
           pageIndex == "page24_2" ||
           pageIndex == "page24_1" ||
@@ -510,295 +546,225 @@ export default {
           type: "error",
         });
       }
-
       this.pageIndex = pageIndex;
 
-      if (pageIndex == "21") {
-        let { index } = params;
-        this.Page21Params = index;
-      }
-
-      // 解忧日记
-      if (pageIndex == "25") {
-        let { score, scoreType } = params;
-        this.person_info.GAD_7 = score.page1;
-        this.person_info.PHQ_9 = score.page2;
-        this.person_info.BDRS_20 = score.page3;
-
-        this.scale_record.GAD_7 = scoreType.GAD_7;
-        this.scale_record.PHQ_9 = scoreType.PHQ_9;
-        this.scale_record.BDRS_20 = scoreType.BDRS;
-      }
-      if (pageIndex == "26") {
-        this.$refs.page26 && this.$refs.page26.initSound();
-        this.liuyanTxt = params.text;
-      }
-      if (pageIndex == "32") {
-        this.$refs.page26 && this.$refs.page26.initSound();
-        this.liuyanTxt = params.text;
-      }
-
-      if (pageIndex == "2") {
-        this.innerAudioContext.play();
-      }
-      if (pageIndex == "3") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page2_start = startTime;
-      }
-      if (pageIndex == "4") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page3_start = startTime;
-      }
-      if (pageIndex == "5") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page4_start = startTime;
-      }
-      if (pageIndex == "6") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page5_start = startTime;
-      }
-      if (pageIndex == "7") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page6_start = startTime;
-      }
-      if (pageIndex == "8") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page7_start = startTime;
-        this.destroyAudio();
-      }
-      if (pageIndex == "9") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page8_start = startTime;
-      }
-      if (pageIndex == "10") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page9_start = startTime;
-      }
-      if (pageIndex == "11") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page10_start = startTime;
-      }
-      if (pageIndex == "12") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page11_start = startTime;
-
-        // 捕鸟音频
-        this.innerAudioContextBird_a = uni.createInnerAudioContext({
-          useWebAudioImplement: false,
-          obeyMuteSwitch: false,
-          loop: true,
-        });
-        this.innerAudioContextBird_a.src =
-          "https://dfs.affectai.cn/affect-material/images/audio/bgm/a2.mp3";
-        this.innerAudioContextBird_a.play();
-      }
-      if (pageIndex == "13") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page12_start = startTime;
-      }
-      if (pageIndex == "page13_next_desc") {
-        this.innerAudioContextBird_a.stop();
-      }
-      if (pageIndex == "page13_next_loading") {
-        this.innerAudioContextBird_a.play();
-      }
-      if (pageIndex == "14") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page13_start = startTime;
-        this.innerAudioContextBird_a && this.innerAudioContextBird_a.destroy();
-      }
-      if (pageIndex == "15") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page14_start = startTime;
-      }
-      if (pageIndex == "16") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page15_start = startTime;
-      }
-      if (pageIndex == "17") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page16_start = startTime;
-      }
-      if (pageIndex == "18") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page17_start = startTime;
-
-        // 旅途选择音频
-        this.innerAudioContext_lt = uni.createInnerAudioContext({
-          useWebAudioImplement: false,
-          obeyMuteSwitch: false,
-          loop: true,
-        });
-        this.innerAudioContext_lt.src =
-          "https://dfs.affectai.cn/affect-material/images/audio/bgm/a3.mp3";
-        this.innerAudioContext_lt.play();
-      }
-      if (pageIndex == "19") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page18_start = startTime;
-      }
-      if (pageIndex == "20") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page19_start = startTime;
-      }
-      if (pageIndex == "21") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page20_start = startTime;
-      }
-      if (pageIndex == "22") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page21_start = startTime;
-      }
-      if (pageIndex == "23") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page22_start = startTime;
-
-        this.innerAudioContext_lt.destroy();
-      }
-      if (pageIndex == "24") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page23_start = startTime;
-
-        // 4_旅店倾诉bgm
-        this.innerAudioContext_24 = uni.createInnerAudioContext({
-          useWebAudioImplement: false,
-          obeyMuteSwitch: false,
-          loop: true,
-        });
-        this.innerAudioContext_24.src =
-          "https://dfs.affectai.cn/affect-material/images/audio/bgm/a5.mp3";
-        this.innerAudioContext_24.play();
-      }
-      if (pageIndex == "25") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page24_start = startTime;
-        this.innerAudioContext_24.destroy();
-      }
-      if (pageIndex == "26") {
-        let startTime = this.getCurrentFormattedTime();
-        console.log("startTime", startTime);
-        this.page_time.page25_start = startTime;
-      }
-      if (pageIndex == "27") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page26_start = startTime;
-
-        // 4_烦恼倾诉bgm
-        this.innerAudioContext_27 = uni.createInnerAudioContext({
-          useWebAudioImplement: false,
-          obeyMuteSwitch: false,
-          loop: true,
-        });
-        this.innerAudioContext_27.src =
-          "https://dfs.affectai.cn/affect-material/images/audio/bgm/a4.mp3";
-        this.innerAudioContext_27.play();
-      }
-      if (pageIndex == "28") {
-        this.innerAudioContext_27.destroy();
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page27_start = startTime;
-      }
-      if (pageIndex == "29") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page28_start = startTime;
-
-        // 5_登顶-五级音阶+快乐分享bgm
-        this.innerAudioContext_29 = uni.createInnerAudioContext({
-          useWebAudioImplement: false,
-          obeyMuteSwitch: false,
-          loop: true,
-        });
-        this.innerAudioContext_29.src =
-          "https://dfs.affectai.cn/affect-material/images/audio/bgm/a6.mp3";
-        this.innerAudioContext_29.play();
-      }
-      if (pageIndex == "30") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page29_start = startTime;
-
-        this.innerAudioContext_29 && this.innerAudioContext_29.stop();
-      }
-      if (pageIndex == "31") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page30_start = startTime;
-
-        this.innerAudioContext_29 && this.innerAudioContext_29.play();
-      }
-      if (pageIndex == "32") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page31_start = startTime;
-
-        this.innerAudioContext_29 && this.innerAudioContext_29.destroy();
-      }
-      if (pageIndex == "33") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page32_start = startTime;
-      }
-      if (pageIndex == "34") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page33_start = startTime;
-      }
-      if (pageIndex == "35") {
-        this.$refs.face_glo && this.$refs.face_glo.stopRecord();
-      }
-
-      /**
-       * 最后测评页
-       *
-       * y=12.5*x+50
-       *
-       * */
-      if (pageIndex == "35") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page34_start = startTime;
-
-        // 5_登顶-五级音阶+快乐分享bgm
-        this.innerAudioContext_35 = uni.createInnerAudioContext({
-          useWebAudioImplement: false,
-          obeyMuteSwitch: false,
-          loop: true,
-        });
-        this.innerAudioContext_35.src =
-          "https://dfs.affectai.cn/affect-material/images/audio/bgm/end.mp3";
-        this.innerAudioContext_35.play();
-        var that = this;
-        this.innerAudioContext_35.onEnded(function () {
-          that.innerAudioContext_35 && that.innerAudioContext_35.destroy();
-        });
-
-        // BFI-10 心境内观自我
-        if (this.scale_record) {
-          let score1 =
-            parseFloat(this.scale_record.BFI_10.B1_T10) -
-            parseFloat(this.scale_record.BFI_10.B1_T5);
-          let score2 =
-            parseFloat(this.scale_record.BFI_10.B1_T8) -
-            parseFloat(this.scale_record.BFI_10.B1_T3);
-          let score3 =
-            parseFloat(this.scale_record.BFI_10.B1_T6) -
-            parseFloat(this.scale_record.BFI_10.B1_T1);
-          let score4 =
-            parseFloat(this.scale_record.BFI_10.B1_T2) -
-            parseFloat(this.scale_record.BFI_10.B1_T7);
-          let score5 =
-            parseFloat(this.scale_record.BFI_10.B1_T9) -
-            parseFloat(this.scale_record.BFI_10.B1_T4);
-
-          // O 开放性	第10题减第5题得分
-          this.scale_type_record.BFI_10_O = Math.floor(score1 * 12.5 + 50);
-          // C 尽责性	第8题减第3题得分
-          this.scale_type_record.BFI_10_C = Math.floor(score2 * 12.5 + 50);
-          // E外向性	第6题减第1题得分
-          this.scale_type_record.BFI_10_E = Math.floor(score3 * 12.5 + 50);
-          // A宜人性	第2题减第7题得分
-          this.scale_type_record.BFI_10_A = Math.floor(score4 * 12.5 + 50);
-          // N神经性	第9题减第4题得分
-          this.scale_type_record.BFI_10_N = Math.floor(score5 * 12.5 + 50);
-        }
-      }
-      if (pageIndex == "36") {
-        let startTime = this.getCurrentFormattedTime();
-        this.page_time.page35_start = startTime;
+      switch (pageIndex) {
+        case "2":
+          this.innerAudioContext.play();
+          break;
+        case "3":
+          this.page_time.page2_start = this.getCurrentFormattedTime();
+          break;
+        case "4":
+          this.page_time.page3_start = this.getCurrentFormattedTime();
+          break;
+        case "5":
+          this.page_time.page4_start = this.getCurrentFormattedTime();
+          break;
+        case "6":
+          this.page_time.page5_start = this.getCurrentFormattedTime();
+          break;
+        case "7":
+          this.page_time.page6_start = this.getCurrentFormattedTime();
+          break;
+        case "8":
+          this.page_time.page7_start = this.getCurrentFormattedTime();
+          this.destroyAudio();
+          break;
+        case "9":
+          this.page_time.page8_start = this.getCurrentFormattedTime();
+          break;
+        case "10":
+          this.page_time.page9_start = this.getCurrentFormattedTime();
+          break;
+        case "11":
+          this.page_time.page10_start = this.getCurrentFormattedTime();
+          break;
+        case "12":
+          this.page_time.page11_start = this.getCurrentFormattedTime();
+          // 捕鸟音频
+          this.innerAudioContextBird_a = uni.createInnerAudioContext({
+            useWebAudioImplement: false,
+            obeyMuteSwitch: false,
+            loop: true,
+          });
+          this.innerAudioContextBird_a.src =
+            "https://dfs.affectai.cn/affect-material/images/audio/bgm/a2.mp3";
+          this.innerAudioContextBird_a.play();
+          break;
+        case "13":
+          this.page_time.page12_start = this.getCurrentFormattedTime();
+          break;
+        case "page13_next_desc":
+          this.innerAudioContextBird_a.stop();
+          break;
+        case "page13_next_loading":
+          this.innerAudioContextBird_a.play();
+          break;
+        case "14":
+          this.page_time.page13_start = this.getCurrentFormattedTime();
+          this.innerAudioContextBird_a &&
+            this.innerAudioContextBird_a.destroy();
+          break;
+        case "15":
+          this.page_time.page14_start = this.getCurrentFormattedTime();
+          break;
+        case "16":
+          this.page_time.page15_start = this.getCurrentFormattedTime();
+          break;
+        case "17":
+          this.page_time.page16_start = this.getCurrentFormattedTime();
+          break;
+        case "18":
+          this.page_time.page17_start = this.getCurrentFormattedTime();
+          // 旅途选择音频
+          this.innerAudioContext_lt = uni.createInnerAudioContext({
+            useWebAudioImplement: false,
+            obeyMuteSwitch: false,
+            loop: true,
+          });
+          this.innerAudioContext_lt.src =
+            "https://dfs.affectai.cn/affect-material/images/audio/bgm/a3.mp3";
+          this.innerAudioContext_lt.play();
+          break;
+        case "19":
+          this.page_time.page18_start = this.getCurrentFormattedTime();
+          break;
+        case "20":
+          this.page_time.page19_start = this.getCurrentFormattedTime();
+          break;
+        case "21":
+          this.page_time.page20_start = this.getCurrentFormattedTime();
+          break;
+        case "22":
+          this.page_time.page21_start = this.getCurrentFormattedTime();
+          break;
+        case "23":
+          this.page_time.page22_start = this.getCurrentFormattedTime();
+          this.innerAudioContext_lt.destroy();
+          break;
+        case "24":
+          this.page_time.page23_start = this.getCurrentFormattedTime();
+          // 4_旅店倾诉bgm
+          this.innerAudioContext_24 = uni.createInnerAudioContext({
+            useWebAudioImplement: false,
+            obeyMuteSwitch: false,
+            loop: true,
+          });
+          this.innerAudioContext_24.src =
+            "https://dfs.affectai.cn/affect-material/images/audio/bgm/a5.mp3";
+          this.innerAudioContext_24.play();
+          break;
+        case "25":
+          // 解忧日记
+          this.page_time.page24_start = this.getCurrentFormattedTime();
+          this.innerAudioContext_24.destroy();
+          break;
+        case "26":
+          this.page_time.page25_start = this.getCurrentFormattedTime();
+          break;
+        case "27":
+          this.page_time.page26_start = this.getCurrentFormattedTime();
+          // 4_烦恼倾诉bgm
+          this.innerAudioContext_27 = uni.createInnerAudioContext({
+            useWebAudioImplement: false,
+            obeyMuteSwitch: false,
+            loop: true,
+          });
+          this.innerAudioContext_27.src =
+            "https://dfs.affectai.cn/affect-material/images/audio/bgm/a4.mp3";
+          this.innerAudioContext_27.play();
+          break;
+        case "28":
+          this.innerAudioContext_27.destroy();
+          this.page_time.page27_start = this.getCurrentFormattedTime();
+          break;
+        case "29":
+          this.page_time.page28_start = this.getCurrentFormattedTime();
+          // 5_登顶-五级音阶+快乐分享bgm
+          this.innerAudioContext_29 = uni.createInnerAudioContext({
+            useWebAudioImplement: false,
+            obeyMuteSwitch: false,
+            loop: true,
+          });
+          this.innerAudioContext_29.src =
+            "https://dfs.affectai.cn/affect-material/images/audio/bgm/a6.mp3";
+          this.innerAudioContext_29.play();
+          break;
+        case "30":
+          this.page_time.page29_start = this.getCurrentFormattedTime();
+          this.innerAudioContext_29 && this.innerAudioContext_29.stop();
+          break;
+        case "31":
+          this.page_time.page30_start = this.getCurrentFormattedTime();
+          this.innerAudioContext_29 && this.innerAudioContext_29.play();
+          break;
+        case "32":
+          this.page_time.page31_start = this.getCurrentFormattedTime();
+          this.innerAudioContext_29 && this.innerAudioContext_29.destroy();
+          break;
+        case "33":
+          this.page_time.page32_start = this.getCurrentFormattedTime();
+          break;
+        case "34":
+          this.page_time.page33_start = this.getCurrentFormattedTime();
+          break;
+        case "35":
+          /**
+           * 最后测评页
+           *
+           * y=12.5*x+50
+           *
+           * */
+          this.$refs.face_glo && this.$refs.face_glo.stopRecord();
+          this.page_time.page34_start = this.getCurrentFormattedTime();
+          // 5_登顶-五级音阶+快乐分享bgm
+          this.innerAudioContext_35 = uni.createInnerAudioContext({
+            useWebAudioImplement: false,
+            obeyMuteSwitch: false,
+            loop: true,
+          });
+          this.innerAudioContext_35.src =
+            "https://dfs.affectai.cn/affect-material/images/audio/bgm/end.mp3";
+          this.innerAudioContext_35.play();
+          var that = this;
+          this.innerAudioContext_35.onEnded(function () {
+            that.innerAudioContext_35 && that.innerAudioContext_35.destroy();
+          });
+          // BFI-10 心境内观自我
+          if (this.scale_record) {
+            let score1 =
+              parseFloat(this.scale_record.BFI_10.B1_T10) -
+              parseFloat(this.scale_record.BFI_10.B1_T5);
+            let score2 =
+              parseFloat(this.scale_record.BFI_10.B1_T8) -
+              parseFloat(this.scale_record.BFI_10.B1_T3);
+            let score3 =
+              parseFloat(this.scale_record.BFI_10.B1_T6) -
+              parseFloat(this.scale_record.BFI_10.B1_T1);
+            let score4 =
+              parseFloat(this.scale_record.BFI_10.B1_T2) -
+              parseFloat(this.scale_record.BFI_10.B1_T7);
+            let score5 =
+              parseFloat(this.scale_record.BFI_10.B1_T9) -
+              parseFloat(this.scale_record.BFI_10.B1_T4);
+            // O 开放性	第10题减第5题得分
+            this.scale_type_record.BFI_10_O = Math.floor(score1 * 12.5 + 50);
+            // C 尽责性	第8题减第3题得分
+            this.scale_type_record.BFI_10_C = Math.floor(score2 * 12.5 + 50);
+            // E外向性	第6题减第1题得分
+            this.scale_type_record.BFI_10_E = Math.floor(score3 * 12.5 + 50);
+            // A宜人性	第2题减第7题得分
+            this.scale_type_record.BFI_10_A = Math.floor(score4 * 12.5 + 50);
+            // N神经性	第9题减第4题得分
+            this.scale_type_record.BFI_10_N = Math.floor(score5 * 12.5 + 50);
+          }
+          break;
+        case "36":
+          this.page_time.page35_start = this.getCurrentFormattedTime();
+          break;
+        default:
+          break;
       }
     },
     // 人脸检测-全局
@@ -830,12 +796,13 @@ export default {
       }
     },
     setGoldCoin(params) {
-      let { goldCoin, playNum } = params;
+      let { goldCoin } = params;
+      // let { goldCoin, playNum } = params;
       this.goldCoin = goldCoin;
 
-      if (playNum != null || playNum != "") {
-        this.playNum = playNum;
-      }
+      // if (playNum != null || playNum != "") {
+      //   this.playNum = playNum;
+      // }
     },
     setJourney(params) {
       let { back_game_1 } = params;
@@ -847,21 +814,21 @@ export default {
     },
     // 入门捕鸟开始 时间
     birdRm_start() {
-      let startTime = this.getCurrentFormattedTime();
-      this.detection_module_time_slice.brid_hunt_start = startTime;
+      this.detection_module_time_slice.brid_hunt_start =
+        this.getCurrentFormattedTime();
     },
     birdRm_end() {
-      let startTime = this.getCurrentFormattedTime();
-      this.detection_module_time_slice.brid_hunt_end = startTime;
+      this.detection_module_time_slice.brid_hunt_end =
+        this.getCurrentFormattedTime();
     },
     // 进阶捕鸟开始 时间
     birdRm_start2() {
-      let startTime = this.getCurrentFormattedTime();
-      this.detection_module_time_slice.brid_hunt_start2 = startTime;
+      this.detection_module_time_slice.brid_hunt_start2 =
+        this.getCurrentFormattedTime();
     },
     birdRm_end2() {
-      let startTime = this.getCurrentFormattedTime();
-      this.detection_module_time_slice.brid_hunt_end2 = startTime;
+      this.detection_module_time_slice.brid_hunt_end2 =
+        this.getCurrentFormattedTime();
     },
     setRoute(params) {
       this.journey_choices.route = params;
@@ -890,21 +857,21 @@ export default {
     },
     // 录音开始时间
     record_start() {
-      let startTime = this.getCurrentFormattedTime();
-      this.detection_module_time_slice.pour_out_video_start = startTime;
+      this.detection_module_time_slice.pour_out_video_start =
+        this.getCurrentFormattedTime();
     },
     record_end() {
-      let startTime = this.getCurrentFormattedTime();
-      this.detection_module_time_slice.pour_out_video_end = startTime;
+      this.detection_module_time_slice.pour_out_video_end =
+        this.getCurrentFormattedTime();
     },
     // 音阶，飞过树
     tree_start() {
-      let startTime = this.getCurrentFormattedTime();
-      this.detection_module_time_slice.cale_video_start = startTime;
+      this.detection_module_time_slice.cale_video_start =
+        this.getCurrentFormattedTime();
     },
     tree_end() {
-      let startTime = this.getCurrentFormattedTime();
-      this.detection_module_time_slice.cale_video_end = startTime;
+      this.detection_module_time_slice.cale_video_end =
+        this.getCurrentFormattedTime();
     },
     // 小鸟飞行录音
     setBirdRecore(params) {
@@ -919,12 +886,12 @@ export default {
     },
     // 快乐分享开始时间
     fx_start() {
-      let startTime = this.getCurrentFormattedTime();
-      this.detection_module_time_slice.sunrise_feeling_video_start = startTime;
+      this.detection_module_time_slice.sunrise_feeling_video_start =
+        this.getCurrentFormattedTime();
     },
     fx_end() {
-      let startTime = this.getCurrentFormattedTime();
-      this.detection_module_time_slice.sunrise_feeling_video_end = startTime;
+      this.detection_module_time_slice.sunrise_feeling_video_end =
+        this.getCurrentFormattedTime();
     },
     /**
 			 * @description 音视频上传 
@@ -967,7 +934,6 @@ export default {
     destroyAudioMouse() {
       this.innerAudioContextMouse && this.innerAudioContextMouse.destroy();
     },
-    //===========
   },
 };
 </script>
@@ -984,9 +950,9 @@ export default {
   background-color: #fff;
   background: #fff;
 }
-.readtrued {
-  background: #05dac6 !important;
-}
+// .readtrued {
+//   background: #05dac6 !important;
+// }
 .tips {
   position: fixed;
   top: 65px;

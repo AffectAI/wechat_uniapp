@@ -18,7 +18,6 @@
         <view
           style="
             width: 22px;
-            display: flex;
             background-image: url('https://dfs.affectai.cn/affect-material/images/page3/down.png');
             background-size: 70%;
             background-repeat: no-repeat;
@@ -81,17 +80,6 @@ export default {
           this.opacity += 0.04;
         }, 100);
       }
-      // if (!this.isSuccess && this.opacity == 0) {
-      //   this.$refs.uToast.show({
-      //     title: "请确保面部完整显示在屏幕之内",
-      //     type: "error",
-      //   });
-      // }
-      // this.$emit("pageEvent", { pageIndex: "28" });
-
-      // uni.navigateTo({
-      // 	url: '/pages/componentsA/page16/index'
-      // })
     },
   },
 };
@@ -112,7 +100,7 @@ export default {
   width: 100vw;
   min-height: 100vh;
   // background-image: url(https://dfs.affectai.cn/affect-material/images/page4/bg.png);
-  background-image: url(https://dfs.affectai.cn/affect-material/images/page20-1024/img32.png);
+  background-image: url('https://dfs.affectai.cn/affect-material/images/page20-1024/img32.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
