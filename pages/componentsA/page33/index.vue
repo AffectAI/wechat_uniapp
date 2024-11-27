@@ -18,7 +18,7 @@
             <typewriter
               v-if="index == 1"
               text="PYP.听到您的快乐分享，我也为您而感到开心！恭喜您在心灵之旅中，看见自已、洞察内心，成功通过了各种考验，成为一名勇敢的旅人！"
-              :speed="80"
+              :speed="60"
             ></typewriter>
           </view>
         </view>

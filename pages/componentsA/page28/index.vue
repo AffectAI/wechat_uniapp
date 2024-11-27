@@ -2,6 +2,7 @@
   <view class="page28-wrap" @click="next2">
     <!-- 心湖- 流程图1 -->
     <view class="img1"></view>
+
     <view class="img2"></view>
 
     <view class="dialogue">
@@ -10,10 +11,10 @@
         <view style="width: 114px">
           <u-image width="114px" height="138px" :src="gloAvtorUrl"></u-image>
         </view>
-        <view style="flex: 1; margin: 0 15px">
+        <view style="flex: 1; margin: 0 5px">
           <typewriter
             text="早上好呀，hyp，昨天晚上休息得好吗？今天，我们将继续前进，胜利就在眼前，终于离【山顶】只差一步之遥啦！趁着时间还早，让我们一起出发，去迎接美丽的日出吧！"
-            :speed="100"
+            :speed="60"
           ></typewriter>
         </view>
         <view
@@ -84,7 +85,7 @@ export default {
 
   .dialogue {
     width: 96%;
-    margin: 0 auto;
+    margin: auto;
     // padding-bottom: 20px;
 
     .top {

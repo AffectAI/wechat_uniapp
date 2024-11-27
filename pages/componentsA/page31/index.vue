@@ -21,7 +21,7 @@
 						<typewriter
 							v-if="index == 1"
 							text="特殊的音调已经唤起了心灵之山的回应。在这座山顶上，许多过往的旅人都在此留下了他们愉快的时刻和珍贵的回忆。您也可以畅快地与我分享令您感到愉快的事情！"
-							:speed="80"
+							:speed="60"
 						></typewriter>
 					</view>
 					
@@ -29,7 +29,7 @@
 						<typewriter
 							v-if="index == 2"
 							text="比如，您可以和我分享，最近和好朋友一起做了什么有趣的事情？"
-							:speed="80"
+							:speed="60"
 						></typewriter>
 					</view>
 					
@@ -37,7 +37,7 @@
 						<typewriter
 							v-if="index == 3"
 							text="比如，您可以和我分享，上次旅行时见到的美丽风景或有趣的事情是什么？"
-							:speed="80"
+							:speed="60"
 						></typewriter>
 					</view>
 					
@@ -45,7 +45,7 @@
 						<typewriter
 							v-if="index == 4"
 							text="比如，您可以和我分享，您最喜欢的电影是哪一部？什么情节打动了您？"
-							:speed="80"
+							:speed="60"
 						></typewriter>
 					</view>
 					
@@ -53,7 +53,7 @@
 						<typewriter
 							v-if="index == 5"
 							text="比如，您可以和我分享，您最喜欢的美食是什么？"
-							:speed="80"
+							:speed="60"
 						></typewriter>
 					</view>
 					
@@ -61,7 +61,7 @@
 						<typewriter
 							v-if="index == 6"
 							text="比如，您可以和我分享，您近期收到令您眼前一亮的礼物是什么？"
-							:speed="80"
+							:speed="60"
 						></typewriter>
 					</view>
 				</view>

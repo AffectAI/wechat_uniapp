@@ -361,7 +361,7 @@ export default {
     return {
       liuyanTxt: "",
       gloAvtorUrl: "",
-      pageIndex: "28",
+      pageIndex: "29",
       tipsText: "请确保面部完整显示在屏幕之内",
       tipsTextCss: "tipsTextCss",
       isSuccess: false, //是否检测完成

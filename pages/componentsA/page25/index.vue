@@ -31,37 +31,37 @@
 					<typewriter
 					  v-if="dialogueIndex == 1"
 					  text="解忧日记让您了解了自己最近的状态。其实，在这座旅馆里还有一面语音留言墙，来这里的旅人都可以在这儿，把自己感到不开心的事倾诉出来。"
-					  :speed="100"
+					  :speed="60"
 					  @finished="finisheda"
 					></typewriter>
 					<typewriter
 					  v-if="dialogueIndex == 2"
 					  text="比如，可以和我说说，您最近一次睡眠不好、失眠的原因是什么？"
-					  :speed="100"
+					  :speed="60"
 					  @finished="finisheda"
 					></typewriter>
 					<typewriter
 					  v-if="dialogueIndex == 3"
 					  text="比如，可以和我说说，您最近一次心情不好是因为什么？"
-					  :speed="100"
+					  :speed="60"
 					  @finished="finisheda"
 					></typewriter>
 					<typewriter
 					  v-if="dialogueIndex == 4"
 					  text="比如，可以和我说说，您上一次和人吵架的原因是什么？"
-					  :speed="100"
+					  :speed="60"
 					  @finished="finisheda"
 					></typewriter>
 					<typewriter
 					  v-if="dialogueIndex == 5"
 					  text="比如，可以和我说说，您最近遇到的工作/学习上的挫折是什么？"
-					  :speed="100"
+					  :speed="60"
 					  @finished="finisheda"
 					></typewriter>
 					<view  v-if="dialogueIndex == 6" @click="next">
 						<typewriter
 						  text="比如，可以和我说说，您最近一次心情不好是因为什么呢？"
-						  :speed="100"
+						  :speed="60"
 						  @finished="finishedend"
 						></typewriter>
 					</view>
